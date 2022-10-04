@@ -1,0 +1,144 @@
+@font-face {
+  font-family: tipo_letra;
+  src: url(/src\assets\Proyecto\fuentes\Appetite.ttf);
+}
+
+@font-face {
+  font-family: tipo_letra2;
+  src: url(/src\assets\Proyecto\fuentes\Floretta.ttf);
+}
+
+@font-face {
+  font-family: tipo_letra3;
+  src: url(/src\assets\Proyecto\fuentes\Grape_Days.ttf);
+}
+
+@font-face {
+  font-family: tipo_letra4;
+  src: url(/src\assets\Proyecto\fuentes\TangoSans.ttf);
+}
+@font-face {
+  font-family: tipo_letra5;
+  src: url(/src\assets\Proyecto\fuentes\coolveticacompressedhv.otf);
+}
+@font-face {
+  font-family: tipo_letra6;
+  src: url(/src\assets\Proyecto\fuentes\DietAgain.ttf);
+}
+
+
+@font-face {
+  font-family: tipo_letra7;
+  src: url(/src\assets\Proyecto\fuentes\DietAgain.ttf);
+}
+
+@font-face {
+  font-family: tipo_letra8;
+  src: url(/src\assets\Proyecto\fuentes\DietAgain.ttf);
+}
+
+@font-face {
+  font-family: tipo_letra9;
+  src: url(/src\assets\Proyecto\fuentes\GhoustSolid.otf);
+}
+
+@font-face {
+  font-family: tipo_letra12;
+  src: url(/src\assets\Proyecto\fuentes\kenyancoffeerg.ttf);
+}
+@font-face {
+  font-family: tipo_letra13;
+  src: url(/src\assets\Proyecto\fuentes\tommy.otf);
+}
+@font-face {
+  font-family: tipo_letra14;
+  src: url(/src\assets\Proyecto\fuentes\mooon.ttf);
+}
+
+@font-face {
+  font-family: tipo_letra15;
+  src: url(/src\assets\Proyecto\fuentes\Retroica.ttf);
+}
+@font-face {
+  font-family: tipo_letra16;
+  src: url(/src\assets\Proyecto\fuentes\mooon.ttf);
+}
+
+@font-face {
+  font-family: tipo_letra17;
+  src: url(/src\assets\Proyecto\fuentes\roboto.ttf);
+}
+
+@font-face {
+  font-family: logos;
+  src: url(/src\assets\Proyecto\fuentes\logos.ttf);
+}
+@font-face {
+  font-family: logos2;
+  src: url(/src\assets\Proyecto\fuentes\logos2.otf);
+}
+@font-face {
+  font-family: logos3;
+  src: url(/src\assets\Proyecto\fuentes\logos3.ttf);
+}
+@font-face {
+  font-family: logos4;
+  src: url(/src\assets\Proyecto\fuentes\logos4.ttf);
+}
+
+.container-body{
+  border: 0px solid rgb(252, 15, 15);
+  margin: 0%;
+  height: 90vh;
+  padding: 0%;
+  box-sizing: border-box;
+
+}
+
+.con{
+  display: flex;
+  flex-flow: column;
+}
+
+.main{
+  display: flex;
+  flex-flow: row;
+}
+
+
+
+/* //////////////////777 */
+
+
+.bounce-enter-active {
+  animation: bounce-in 0.5s;
+}
+.bounce-leave-active {
+  animation: bounce-in 0.5s reverse;
+}
+@keyframes bounce-in {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1.25);
+  }
+  100% {
+    transform: scale(1);
+  }
+
+
+}
+
+
+/* //////////////////////// */
+
+/* .fade-enter-from,.fade-leave-to{
+  opacity: 0;
+}
+
+.fade-enter-active,.fade-leave-active{
+  transition: opacity 0.5s ease-in-out;
+  
+} */
+

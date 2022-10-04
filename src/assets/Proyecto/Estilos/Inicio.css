@@ -1,0 +1,15 @@
+aside {
+    display: flex;
+    flex-flow: column;
+    width: max-content;
+    height: max-content;
+    border-radius: 2rem;
+    background: #eaea8a;
+    margin-top: 10%;
+    position: sticky;
+    top: 13%;
+    z-index: 1;
+  }
+  .container{
+      border: 1px solid red;
+  }

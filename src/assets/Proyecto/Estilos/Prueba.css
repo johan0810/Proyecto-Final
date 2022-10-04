@@ -1,0 +1,49 @@
+::-webkit-scrollbar {
+    display: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+#blog {
+    display: flex;
+    flex-flow: column;
+    border: 1px solid white;
+    padding:  3rem;
+    backdrop-filter: blur(5px) brightness(140%);
+    /* text-shadow: -4px 10px 5px rgba(0,0,0,0.44); */  
+    font-family: tipo_letra13;
+    font-size: 2rem;
+  
+}
+
+#blog span{
+    display: flex;
+    border: 0px solid yellow;
+    /* flex-flow: row; */
+    margin-top: 15px;
+}
+.container-body{
+    display: flex;
+    flex-flow: column;
+    margin-left: 4.8rem;
+}
+
+
+#seccion1 {
+    display: flex;
+    flex-flow: column;
+    /* color: white; */
+    border: 1px solid red;
+    background: #eaea8a;
+    padding-top: 7rem;
+    padding-bottom: 1rem;
+  height: 100vh;
+    /* background: url("imagenes/sena0.jpeg") no-repeat center center fixed; */
+    background-size: cover;
+}
+.pregunta{
+    display: flex;
+    align-content: center;
+    border: 1px solid green;
+}
