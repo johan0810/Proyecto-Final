@@ -1,14 +1,9 @@
 <template>
-
   <p>Name:{{ user.name }}</p>
   <p>Email:{{ user.email }}</p>
   <p>created_at: {{ user.created_at }}</p>
-   <button type="button" @click="logout()">Cerrar Sesion</button>  
+  <button type="button" @click="logout()">Cerrar Sesion</button>
 
-    
-
-     
-   
   
 </template>
 
@@ -17,9 +12,8 @@
 </style>
 
 <script>
-
 export default {
-  components:{},
+  components: {},
   data() {
     return {
       token: null,
@@ -28,9 +22,10 @@ export default {
   },
 
   mounted() {
-    
     if (localStorage.token) {
       this.token = localStorage.token;
+      this.user = JSON.parse(localStorage.user);
+
       this.get_user();
     } else {
       this.$router.push({
@@ -81,7 +76,6 @@ export default {
             message: e.response.data.message,
           },
         });
-       
       }
     },
   },

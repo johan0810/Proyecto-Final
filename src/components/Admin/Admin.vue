@@ -1,14 +1,16 @@
 <template>
-   <div class="container">
-   
-   
+<div class="container-body">
+<div class="container">
    <router-view></router-view>
    </div>   
+
+</div>
+   
  
 </template>
 
 <style scoped>
-@import url(/src\assets\Proyecto\Estilos\Cuenta.css);
+@import url(/src\assets\Proyecto\Estilos\CuentaAdmin.css);
 </style>
 
 <script>
@@ -25,6 +27,24 @@ export default {
     this.$router.push("/admin/inicio")
   },
   methods:{
+
+    async get_user() {
+      try {
+        console.log(this.token);
+
+        const rs = await this.axios.get("/api/admin", {
+          headers: { Authorization: `Bearer ${this.token}` },
+        });
+        this.user = rs.data.user;
+      } catch (e) {
+        this.$router.push({
+          name: "Home",
+          params: {
+            message: "no estas autorizado",
+          },
+        });
+      }
+    },
 
     async logout() {
       try {

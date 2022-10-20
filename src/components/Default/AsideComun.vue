@@ -92,7 +92,7 @@
 <style scoped>
 @import url(/src\assets\Proyecto\Estilos\aside.css);
 </style>
-<script>
+<!-- <script>
 export default {
   mounted() {
     // let btn = document.querySelector("#btn");
@@ -117,5 +117,5 @@ export default {
 
   },
 };
-</script>
+</script> -->
 

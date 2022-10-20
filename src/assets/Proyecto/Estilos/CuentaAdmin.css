@@ -1,0 +1,76 @@
+.container-body{
+display: flex;
+  /* background-image: url(../Imagenes/p.png); */
+  background-size: cover;
+  border: 0px solid red;
+  
+
+  }
+
+.container{
+  border: 0px solid red;
+}
+
+
+.seccion {
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  border: 0px solid rebeccapurple;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.5s ease-in-out;
+}
+.card {
+  width: 30%;
+  height: 35vh;
+
+  border-radius: 3rem;
+  /* background-image: url(../Imagenes/img_Publicidad/anuncio3.jpg)  ; */
+  background-image: url(../Imagenes/gif3.gif);
+  background-size: contain;
+  box-shadow: 3px 5px 5px black;
+  margin: 4rem;
+  top: 6rem;
+}
+
+.content {
+  width: 100%;
+  height: 100%;
+  border-radius: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-size: contain;
+  opacity: 0;
+  transition: 0.5s;
+  background-image: url(../Imagenes/gif3.gif);
+}
+
+.link {
+  border: 0px solid red;
+  text-decoration: none;
+  color: rgb(33, 4, 176);
+  font-family: tipo_letra7;
+  font-size: 3rem;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.732);
+}
+
+/* .content h2, a{
+  color:rgb(255, 255, 255, .8);
+}  */
+
+.card:hover .content {
+  opacity: 1;
+  transform: scale(1.2);
+}

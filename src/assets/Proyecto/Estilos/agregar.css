@@ -7,6 +7,7 @@
     border: 0px solid blue;
     flex-wrap: wrap;
     justify-content: center;
+  
   }
   .list{
     display: flex;
@@ -15,6 +16,10 @@
   }
   th{
     margin: 3rem;
+  }
+  .usu{
+    font-family: tipo_letra3;
+    color: green;
   }
   
 
@@ -123,6 +128,25 @@
     }
     
   }
+
+td:hover{
+
+color: white;
+  background: rgb(16, 158, 63);
+  border-radius: 2rem;
+  cursor: pointer;
+}
+.al{
+  display: flex;
+  justify-content: center;
+  color: green;
+
+}
+#delete{
+  display: flex;
+  margin-left: 60%;
+}
+
   
   @media (max-width: 790px), (max-height: 300px) {
     #titulo {

@@ -1,0 +1,99 @@
+.container-body {
+  display: flex;
+  flex-flow: column;
+  width: 100%;
+  height: 100vh;
+  border: 0px solid red;
+  background: white;  
+}
+#uno {
+  display: flex;
+  height: 6rem;
+  background: rgba(51, 184, 229, 0.55);  
+}
+
+#dos {
+  display: flex;
+  height: 5rem;
+  background: rgba(51, 184, 229, 0.55);  
+  margin-top: 68vh;
+}
+
+/* .logo{
+    display: flex;
+    height:max-content ;
+    width: 25%;
+    background: orange;
+    margin:1rem;
+    border-radius: 1rem;
+    border: 1px solid red;
+    justify-content: center;
+  
+} */
+
+.logo {
+  display: flex;
+  background-image: url(../Logo/logo2.png) !important ;
+  background:white    ;
+  border-radius: 1rem;
+  margin: 1rem;
+  margin-right: 5rem;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 4rem;
+  background-position: center;
+  width: 10%;
+  border: 0px solid red;
+}
+.home {
+    display: flex;
+    color: black;
+    background:white   ;
+    border-radius: 1rem;
+    margin: 1rem;
+    margin-right: 5rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 4rem;
+    background-position: center;
+    width: 10%;
+    border: 0px solid red;
+    padding: .5rem;
+  }
+
+.titulo {
+  width: 80%;
+  height: max-content;
+  background:#1d1b31    ;
+  margin: 1rem;
+  border-radius: 1rem;
+}
+
+#titulo {
+  border: 0px solid wheat;
+  font-family: tipo_letra3;
+  color: white;
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+
+#boton-buscar {
+    border: none;
+    background: none;
+    color: white;
+    width: 5rem;
+    height: 3rem;
+    /* position: sticky;
+      top: 0px;
+      z-index: 1;  */
+    text-decoration: none;
+    text-align: center;
+    border:0px solid red;
+    
+  }
+
+  span{
+      font-size: 3rem;
+      color: black;
+  }

@@ -66,16 +66,15 @@
             <div v-for="(ans, i) in get_answers(questions.id)" :key="'ans' + i">
               {{ ans.options }}
 
-
               <input
                 class="form-check-input"
                 type="checkbox"
                 role="switch"
                 name="checkbox"
                 value="0"
-                id="flexSwitchCheckDefault" @click="edit(ans)"
-                />
-
+                id="flexSwitchCheckDefault"
+                @click="edit(ans)"
+              />
             </div>
           </div>
         </div>
@@ -95,8 +94,8 @@
 </template>
 
   <style scoped>
-  @import url(/src\assets\Proyecto\Estilos\agregar.css);
-  </style>
+@import url(/src\assets\Proyecto\Estilos\agregar.css);
+</style>
 >
 <script>
 export default {
@@ -136,9 +135,7 @@ export default {
     },
 
     get_answers(questions) {
-      return this.list_answer.filter(
-        (ans) => ans.questions_id === questions
-      );
+      return this.list_answer.filter((ans) => ans.questions_id === questions);
     },
 
     async store() {
@@ -166,17 +163,11 @@ export default {
       this.index();
     },
 
-    FalseTrue(){
-      
-    },
+    FalseTrue() {},
 
-    DeleteP(q) {
-      this.Delete = q;
-    },
-
-    async destroy() {
-      let id = this.Delete.id;
-      await axios.delete("http://127.0.0.1:8000/api/question/" + id);
+    async destroy(id) {
+      // let id=this.Delete.id;
+      await axios.delete("http://127.0.0.1:8000/api/questions/" + id);
       this.index();
     },
   },

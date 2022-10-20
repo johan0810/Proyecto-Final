@@ -92,12 +92,16 @@
   height: 90vh;
   padding: 0%;
   box-sizing: border-box;
+  /* background-image: url(../Imagenes/imagen1.jpg);
+  background-size: contain; */
+
 
 }
 
 .con{
   display: flex;
   flex-flow: column;
+ 
 }
 
 .main{

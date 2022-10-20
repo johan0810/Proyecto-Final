@@ -26,6 +26,7 @@
               placeholder="Correo Electronico"
               v-model="form.email"
             />
+
             <input
               class="form-control"
               name="password"
@@ -33,50 +34,84 @@
               placeholder="Contraseña"
               v-model="form.password"
             />
+            <div class="message">
+              <span v-if="errors.password">{{ errors.password[0] }}</span>
+
+              <span v-if="message">{{ message }}</span>
+            </div>
             <!-- <span v-if="errors.password">{{ errors.password[0] }}</span> -->
 
-             <div >
-        <router-link class="link" to="/ForgotPassword"
-              >¿Olvidaste Tu contraseña?
-            </router-link>
-        </div>
-            <button class="btn btn-primary" @click="login()"> Entrar</button>
-            
-       
-            
+            <div>
+              <router-link class="link" to="/ForgotPassword"
+                >¿Olvidaste Tu contraseña?
+              </router-link>
+            </div>
+            <button class="btn btn-primary" @click="login()">Entrar</button>
           </div>
           <!-- REGISTR  O -->
           <div class="formulario_register">
             <h2>Registrarse</h2>
-            <input
-              class="form-control"
-              type="name"
-              name="name"
-              v-model="form.name"
-              placeholder="Nombre Completo"
-            />
-            <input
-              class="form-control"
-              type="email"
-              name="email"
-              v-model="form.email"
-              placeholder="Correo Electronico"
-            />
-            <input
-              class="form-control"
-              type="password"
-              name="password"
-              v-model="form.password"
-              placeholder="Password"
-            />
-            <input
-              class="form-control"
-              type="password"
-              name="password_confirmation"
-              v-model="form.password_confirmation"
-              placeholder="Password Confirmation"
-            />
+            <div class="formRegister">
+              <div class="seccion1form">
+                <input
+                  class="form-control"
+                  type="name"
+                  name="name"
+                  v-model="form.name"
+                  placeholder="Nombre Usuario"
+                />
+                <input
+                  class="form-control"
+                  type="text"
+                  name="type dni"
+                  v-model="form.type_dni"
+                  placeholder="Tipo Documento"
+                />
+                <input
+                  class="form-control"
+                  type="password"
+                  name="password"
+                  v-model="form.password"
+                  placeholder="Password"
+                />
+                <input
+                  class="form-control"
+                  type="password"
+                  name="password_confirmation"
+                  v-model="form.password_confirmation"
+                  placeholder="Password Confirmation"
+                />
+              </div>
+              <div class="seccion2form">
+                <input
+                  class="form-control"
+                  type="email"
+                  name="email"
+                  v-model="form.email"
+                  placeholder="Correo Electronico"
+                />
 
+                <input
+                  class="form-control"
+                  type="number"
+                  name="dni"
+                  v-model="form.dni"
+                  placeholder="N° Documento"
+                />
+
+                <input
+                  class="form-control"
+                  type="number"
+                  name="phone"
+                  v-model="form.phone"
+                  placeholder="N° Telefono"
+                />
+              </div>
+            </div>
+
+            <div class="message">
+              <span v-if="errors.email">{{ errors.password[0] }}</span>
+            </div>
             <button
               class="btn btn-primary"
               @click="Register()"
@@ -160,6 +195,9 @@ export default {
         email: "",
         password: "",
         password_confirmation: "",
+        type_dni: "",
+        dni: "",
+        phone: "",
         token: null,
       },
       errors: {},
@@ -245,13 +283,23 @@ export default {
     async login() {
       try {
         const rs = await this.axios.post("/api/login", this.form);
-        this.$router.push({
-          name: "User",
-          // params: {
-          //   token: rs.data.token,
-          // },
-        });
+
         localStorage.token = rs.data.token;
+        localStorage.user = JSON.stringify(rs.data.user);
+
+        switch (rs.data.roles) {
+          case "Admin":
+            this.$router.push({
+              name: "Admin",
+              // params: {token: rs.data.token},
+            });
+            break;
+
+          case "Aprendiz":
+            this.$router.push({
+              name: "User",
+            });
+        }
       } catch (e) {
         this.errors = {};
         this.message = null;
@@ -286,4 +334,3 @@ export default {
   },
 };
 </script>
-

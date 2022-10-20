@@ -7,7 +7,7 @@ width: 100vw ; */
   justify-content: center;
   /* background-image: url(/src\assets\Proyecto\Imagenes\imagen1.jpg); */
   /* background-size: contain; */
- 
+  background: rgba(51, 184, 229, 0.55);  
   font-size: 25px;
 }
 
@@ -24,9 +24,9 @@ width: 100vw ; */
   align-items: center;
   background: white;
 }
-span {
-  color: red;
-  font-size: 18px;
+.message{
+    font-size: 30px;
+    margin: 0%;
 }
 
 .link{
@@ -81,14 +81,14 @@ aside {
   
 }
 
-.container-body{
+/* .container-body{
   display: flex;
   align-content: center;
-  border: 0px solid rebeccapurple ;
- /* background: #04172b; */
-  
+  border: 0px solid rebeccapurple !important;
 
-}
+background: rgba(51, 184, 229, 0.55);  
+
+} */
 
 main {
   display: flex;
@@ -115,7 +115,7 @@ main {
   display: flex;
   justify-content: center;
   backdrop-filter: blur(10px);
-  background-color: rgba(51, 184, 229, 0.55);
+  background-color: rgba(255, 255, 255, 0.811);
   /* background-color: rgba(0, 128, 255, 0.5); */
 
 }
@@ -175,7 +175,7 @@ main {
   width: 100%;
   padding: 50px 20px;
   /* background: rgba(255,152,236,0.6); */
-  background: #4516a8;
+  background: #280f5f;
   /* background: #fff; */
   position: absolute;
   border-radius: 20px;
@@ -191,6 +191,7 @@ main {
   position: absolute;
   border-radius: 20px;
   border: 0px solid rebeccapurple;
+  color: wheat;
 
  
 }
@@ -210,7 +211,7 @@ main {
   padding: 10px;
   border: none;
   background: #f2f2f2;
-  font-size: 30px;
+  font-size: 60%;
   outline: none;
 
 }
@@ -232,7 +233,17 @@ main {
 }
 
 .formulario_register {
-  display: none;
+ display: none;
+  border: 0px solid red;
+  width: 120%;
+
+}
+.formRegister{
+  display: flex;
+  border: 0px solid gold;
+}
+.seccion1form{
+  margin-right:1rem;
 }
 
 

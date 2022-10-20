@@ -20,7 +20,7 @@
       <li>
         <router-link class="link" to="/admin/inicio">
           <a href="#">
-            <span class="material-symbols-outlined"> home </span>
+            <span class="material-symbols-outlined">Undo </span>
             <span class="links_name">inicio</span>
           </a>
         </router-link>
@@ -37,27 +37,27 @@
 
         <span class="tooltip">Perfil</span>
       </li>
+    
       <li>
-        <a href="#">
-          <span class="material-symbols-outlined"> chat </span>
-          <span class="links_name">Message</span>
-        </a>
-        <span class="tooltip">Message</span>
-      </li>
-      <!-- <li>
+       <router-link class="link" to="/admin/Usuarios">
           <a href="#">
-            <span class="material-symbols-outlined"> donut_small </span>
-            <span class="links_name">Analytics</span>
-          </a>
-          <span class="tooltip">Analytics</span>
-        </li> -->
-      <li>
-        <a href="#">
-          <span class="material-symbols-outlined"> folder_open </span>
-          <span class="links_name">File Manager</span>
-        </a>
-        <span class="tooltip">File Manager</span>
+            <span class="material-symbols-outlined">chat </span>
+            <span class="links_name">Message</span>
+          </a>  
+        </router-link>
+        <span class="tooltip">Usuarios</span>
       </li>
+      
+     <!-- <li>
+        <router-link class="link" to="/admin/">
+          <a href="#">
+            <span class="material-symbols-outlined"> folder_open </span>
+            <span class="links_name">Documetos Sena</span>
+          </a>  
+        </router-link>
+        <span class="tooltip">Documentos</span>
+      </li> -->
+      
       <!-- <li>
             <a href="#">
               <span class="material-symbols-outlined"> shopping_cart </span>
@@ -73,11 +73,13 @@
           <span class="tooltip">Saved</span>
         </li> -->
       <li>
+       <router-link class="link" to="/admin/Setting/">
         <a href="#">
           <span class="material-symbols-outlined"> settings </span>
           <span class="links_name">Setting</span>
         </a>
         <span class="tooltip">Setting</span>
+        </router-link>
       </li>
     </ul>
     <div class="profile_content">
@@ -97,7 +99,7 @@
 <style scoped>
 @import url(/src\assets\Proyecto\Estilos\aside.css);
 </style>
-<script>
+<!-- <script>
 export default {
   mounted() {
     // let btn = document.querySelector("#btn");
@@ -118,5 +120,5 @@ export default {
     };
   },
 };
-</script>
+</script> -->
 

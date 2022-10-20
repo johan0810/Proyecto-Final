@@ -34,7 +34,7 @@ html {
     display: flex;
     flex-flow: column;
     /* color: white; */
-    border: 1px solid red;
+    /* border: 1px solid red; */
     background: #eaea8a;
     padding-top: 7rem;
     padding-bottom: 1rem;
@@ -45,5 +45,25 @@ html {
 .pregunta{
     display: flex;
     align-content: center;
-    border: 1px solid green;
+    /* border: 1px solid green; */
+}
+
+ul{
+    list-style-type: disclosure-closed;
+    
+}
+
+.div{
+    display: flex;
+    width: 25rem;
+    /* border: 2px solid rebeccapurple; */
+    border-radius: 3rem;
+    padding-left: 3%;
+        
+}
+
+.div:hover{
+    background: #1d1b31ab ;
+    cursor: pointer;
+    color: white;
 }

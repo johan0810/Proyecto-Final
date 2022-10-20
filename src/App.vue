@@ -2,13 +2,12 @@
   <!-- <router-link class="link" to="/login">Acceder </router-link>
     <router-link class="link" to="/register">Registrate </router-link> -->
   <!-- <router-link class="link" to="/ForgotPassword">Resetear </router-link> -->
-  <!-- <router-link  v-if="this.$route.path =='/account'" class="link" to="/account">Tu cuenta</router-link> -->
+  <!-- <router-link  v-if="this.$route.path =='/ForgotPassword'" class="link" to="/account">Recuperar Contraseña</router-link> -->
 
   <!-- <router-view name="NavBar"> </router-view> -->
   <!-- <router-view name="Aside"> </router-view>  -->
 
-  <router-view name="NavBar"> </router-view>
-
+  <!-- <router-view name="NavBar"> </router-view> -->
   <router-view name="Aside"> </router-view>
 
 

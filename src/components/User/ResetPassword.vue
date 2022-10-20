@@ -1,43 +1,49 @@
 <template>
+
   <p>{{ message }}</p>
 
-  <br />
   <div class="container">
     <form>
-        
-        <label for="">Email:</label>
-      <input type="email" name="email" v-model="form.email" />
-      <span v-if="errors.email">{{ errors.email[0] }}</span>
-      <br>
-<br>
-      <label for="">Password:</label>
-      <input type="password" name="password" v-model="form.password" />
-      <span v-if="errors.password">{{ errors.password[0] }}</span>
-
-      <br />
-      <br />
-
-      <label for="">Confirmation:</label>
+      <label for=""><h1>Email:</h1> </label>
       <input
+        class="form-control"
+        type="email"
+        name="email"
+        v-model="form.email"
+      />
+
+
+      <label for=""><h1>Password:</h1></label>
+      <input
+        class="form-control"
+        type="password"
+        name="password"
+        v-model="form.password"
+      />
+   
+
+      <label for=""><h1>Confimation:</h1></label>
+      <input
+        class="form-control"
         type="password"
         name="password_confirmation"
         v-model="form.password_confirmation"
       />
-      <span v-if="errors.password">{{
-        errors.password[0]
-      }}</span>
-      <br />
-      <br />
+      <div class="message">
+          <span v-if="errors.email">{{ errors.email[0] }}</span>
+          </div> 
 
-      <button @click="ResetPassword()" type="button">Actualizar</button>
+      <button class="btn btn-dark" @click="ResetPassword()" type="button" id="boton">
+        Actualizar
+      </button>
 
-      <br />
       <p v-if="message">{{ message }}</p>
-      <br />
     </form>
   </div>
 </template>
-
+<style scoped>
+@import url(/src\assets\Proyecto\Estilos\Password.css);
+</style>
 <script>
 export default {
   data() {
@@ -52,7 +58,6 @@ export default {
       errors: {},
     };
   },
-
 
   mounted() {
     if (this.$route.query.token) this.form.token = this.$route.query.token;

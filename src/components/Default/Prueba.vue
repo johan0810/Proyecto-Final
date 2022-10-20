@@ -28,16 +28,24 @@
         <span
           class="text-black font-weight-light efecto e-izquierda d400 titulo2" v-for="(ans, i) in get_answers(questions.id)" :key="'ans' + i"
         >
-          <input  class="form-check-input" name="checkbox"
-                type="checkbox" id="" />
+         
           <label class="form-check-label" for="">
+          <ul>
+          <li>
+          <div class="div">
           {{ ans.options }}
+          </div>
+          
+          </li>
+          
+          </ul>
+           
           </label>
         </span>
        
       </div>
     </div>
- 
+
   </div>
 </template>
 

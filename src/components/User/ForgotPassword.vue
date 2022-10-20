@@ -1,21 +1,35 @@
 <template>
-  <div class="container">
-    <div id="resetear">
-      <h4>Ingresar Correo Registrado</h4>
+  <div class="container-body">
+    <div class="container">
+      <div id="resetear">
+        <h1>Ingresa El Correo Registrado</h1>
+      </div>
+      <form>
+        <div class="container-main">
+          <label for=""><h1>Email:</h1> </label>
+          <input
+            class="form-control"
+            type="email"
+            name="email"
+            placeholder="@..."
+            v-model="email" 
+          />
+          <div class="message">
+          <span v-if="errors.email">{{ errors.email[0] }}</span>
+          </div> 
+
+          <button  id="boton" class="btn btn-primary" @click="send_email()" type="button">
+            Enviar Correo
+          </button>
+          <p v-if="message">{{ message }}</p>
+        </div>
+      </form>
     </div>
   </div>
-
-  <form>
-    <label for="">Email:</label>
-    <input type="email" name="email" v-model="email" />
-    <span v-if="errors.email">{{ errors.email[0] }}</span>
-    <br />
-    <button @click="send_email()" type="button">Enviar Correo</button>
-    <p v-if="message">{{ message }}</p>
-    <br />
-  </form>
 </template>
-
+<style scoped>
+@import url(/src\assets\Proyecto\Estilos\Password.css);
+</style>
 <script>
 export default {
   data() {

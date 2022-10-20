@@ -1,11 +1,17 @@
 <template>
+  <div class="container">
+    <p>Name:{{ user.name }}</p>
+    <p>Email:{{ user.email }}</p>
+    <p>created_at: {{ user.created_at }}</p>
+    <p>crea {{ user.password }}</p>
 
-  <p>Name:{{ user.name }}</p>
-  <p>Email:{{ user.email }}</p>
-  <p>created_at: {{ user.created_at }}</p>
-   <button type="button" @click="logout()">Cerrar Sesion</button>  
-
+    <div class="d">
+    <!-- <button class="btn btn-primary" type="button" @click="logout()">Cerrar Sesion</button> -->
     
+    </div>
+
+   
+  </div>
 </template>
 
 <style scoped>
@@ -13,9 +19,8 @@
 </style>
 
 <script>
-
 export default {
-  components:{},
+  components: {},
   data() {
     return {
       token: null,
@@ -24,8 +29,11 @@ export default {
   },
 
   mounted() {
+    
     if (localStorage.token) {
       this.token = localStorage.token;
+      this.user = JSON.parse(localStorage.user);
+
       this.get_user();
     } else {
       this.$router.push({
@@ -55,30 +63,29 @@ export default {
         });
       }
     },
-    async logout() {
-      try {
-        const rs = await this.axios.get("/api/logout", {
-          headers: { Authorization: `Bearer ${this.token}` },
-        });
+    // async logout() {
+    //   try {
+    //     const rs = await this.axios.get("/api/logout", {
+    //       headers: { Authorization: `Bearer ${this.token}` },
+    //     });
 
-        localStorage.clear();
+    //     localStorage.clear();
 
-        this.$router.push({
-          name: "Home",
-          params: {
-            message: rs.data.message,
-          },
-        });
-      } catch (e) {
-        this.$router.push({
-          name: "Home",
-          params: {
-            message: e.response.data.message,
-          },
-        });
-       
-      }
-    },
+    //     this.$router.push({
+    //       name: "Home",
+    //       params: {
+    //         message: rs.data.message,
+    //       },
+    //     });
+    //   } catch (e) {
+    //     this.$router.push({
+    //       name: "Home",
+    //       params: {
+    //         message: e.response.data.message,
+    //       },
+    //     });
+    //   }
+    // },
   },
 };
 </script>

@@ -40,9 +40,7 @@
             <!-- <th id="name2">CODIGO</th> -->
             <th id="position2">EDITAR</th>
             <th id="icons2">ELIMINAR</th>
-            <th id="salary2">
-           
-            </th>
+            <th id="salary2"></th>
           </tr>
         </thead>
 
@@ -63,7 +61,7 @@
             </td>
 
             <td id="icons">
-              <button class="btn btn-danger" @click="destroy()">
+              <button class="btn btn-danger" @click="destroy(questions.id)">
                 Eliminar
               </button>
             </td>
@@ -103,7 +101,7 @@
 <style scoped>
 @import url(/src\assets\Proyecto\Estilos\agregar.css);
 </style>
->
+
 <script>
 export default {
   name: "Preguntas",
@@ -167,12 +165,11 @@ export default {
 
     //     },
 
-    //     async destroy() {
-    //       let id=this.Delete.id;
-    //         await axios.delete("http://127.0.0.1:8000/api/questions/"+id);
-    //         this.index()
-
-    //     }
+    async destroy(id) {
+      // let id=this.Delete.id;
+      await axios.delete("http://127.0.0.1:8000/api/questions/" + id);
+      this.index();
+    },
   },
 };
 </script>

@@ -3,16 +3,19 @@
     <router-link class="link" to="/account/edit-profile">Configurar Cuenta </router-link>
     <router-link class="link" to="/account/change-password">Cambiar Contraseña </router-link> -->
 
-  <div class="container-body">
+  <div class="containere-body">
     <main>
       <router-view v-slot="{ Component }">
-    <transition name="fade">
-      <component :is="Component" />
-    </transition>
-  </router-view>
-     
+        <transition name="fade">
+          <component :is="Component" />
+        </transition>
+      </router-view>
+      
     </main>
+    
+   
   </div>
+
 </template>
 
 <style scoped>
@@ -30,23 +33,21 @@ export default {
   },
 
   mounted() {
-    this.$router.push("/user/inicio")
+    this.$router.push("/user/inicio");
 
-     if (localStorage.token) {
+    if (localStorage.token) {
       this.token = localStorage.token;
       this.get_user();
     } else {
       this.$router.push({
-        name: "Login",
+        name: "Home",
         params: {
           message: "¡Inicia sesión nuevamente!",
         },
       });
     }
-  
   },
 
-  
   methods: {
     async get_user() {
       try {
@@ -65,29 +66,29 @@ export default {
         });
       }
     },
-    async logout() {
-      try {
-        const rs = await this.axios.get("/api/logout", {
-          headers: { Authorization: `Bearer ${this.token}` },
-        });
+    // async logout() {
+    //   try {
+    //     const rs = await this.axios.get("/api/logout", {
+    //       headers: { Authorization: `Bearer ${this.token}` },
+    //     });
 
-        localStorage.clear();
+    //     localStorage.clear();
 
-        this.$router.push({
-          name: "Home",
-          params: {
-            message: rs.data.message,
-          },
-        });
-      } catch (e) {
-        this.$router.push({
-          name: "Home",
-          params: {
-            message: e.response.data.message,
-          },
-        });
-      }
-    },
+    //     this.$router.push({
+    //       name: "Home",
+    //       params: {
+    //         message: rs.data.message,
+    //       },
+    //     });
+    //   } catch (e) {
+    //     this.$router.push({
+    //       name: "Home",
+    //       params: {
+    //         message: e.response.data.message,
+    //       },
+    //     });
+    //   }
+    // },
   },
 };
 </script>

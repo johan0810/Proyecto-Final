@@ -1,12 +1,30 @@
 <template>
-<div class="container">
+<div class="container-body">
+ <div class="container">
+    <!-- <router-link class="link" to="/login">Acceder </router-link> -->
 
-   <router-link class="link" to="/login">Acceder </router-link>
-   <router-view></router-view></div>
-   <aside>
-   <perfil></perfil>
-   </aside>
-   
+    <div class="card">
+      <div class="content">
+        <router-link class="link" to="/login">
+          <div>Login</div>
+        </router-link>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="content">
+        <router-link class="link" to="/Default/Recorrido">
+          <div>HACER RECORRIDO</div>
+        </router-link>
+      </div>
+    </div>
+    
+  </div>
+</div>
+ 
+ 
+
+  <!-- <router-view></router-view> -->
 </template>
 
 
@@ -16,8 +34,7 @@
 <script>
 // import Home from './Home.vue'
 
-
-import Perfil from '../User/Perfil.vue';
+import Perfil from "../User/Perfil.vue";
 
 export default {
   components: {
@@ -25,6 +42,6 @@ export default {
     Perfil,
   },
 
-
-    Perfil}
+  Perfil,
+};
 </script>
