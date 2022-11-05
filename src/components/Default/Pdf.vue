@@ -6,5 +6,5 @@
     
 </template>
 <style scoped>
-@import url(/src\assets\Proyecto\Estilos\document.css);
+@import url(/src\assets\Proyecto\Estilos\User\document.css);
 </style>

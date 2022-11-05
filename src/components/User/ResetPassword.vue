@@ -42,7 +42,7 @@
   </div>
 </template>
 <style scoped>
-@import url(/src\assets\Proyecto\Estilos\Password.css);
+@import url(/src\assets\Proyecto\Estilos\Default\Password.css);
 </style>
 <script>
 export default {

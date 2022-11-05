@@ -1,41 +1,37 @@
-.container-body{
-display: flex;
-  /* background-image: url(../Imagenes/p.png); */
-  background-size: cover;
-  border: 0px solid red;
+/* .container-body{
+
+  background-image: url(/src\assets\Proyecto\Imagenes\imagen1.jpg);
   
+} */
 
-  }
-
-.container{
-  border: 0px solid red;
+aside {
+  display: flex;
+  flex-flow: column;
+  width: max-content;
+  height: max-content;
+  border-radius: 2rem;
+  background: #eaea8a;
+  position: sticky;
+  z-index: 1;
 }
-
-
-.seccion {
+.container {
+  border: 0px solid red;
   display: flex;
   flex-flow: row;
   justify-content: center;
   flex-wrap: wrap;
+  scroll-behavior: smooth;
+
   border: 0px solid rebeccapurple;
 }
 
-.fade-enter-from,
-.fade-leave-to {
-  opacity: 0;
-}
-
-.fade-enter-active,
-.fade-leave-active {
-  transition: opacity 0.5s ease-in-out;
-}
 .card {
   width: 30%;
   height: 35vh;
-
+  border: 0px solid rgb(73, 70, 70);
   border-radius: 3rem;
   /* background-image: url(../Imagenes/img_Publicidad/anuncio3.jpg)  ; */
-  background-image: url(../Imagenes/gif3.gif);
+  background-image: url(/src\assets\Proyecto\Imagenes\gif2.gif);
   background-size: contain;
   box-shadow: 3px 5px 5px black;
   margin: 4rem;
@@ -51,9 +47,10 @@ display: flex;
   align-items: center;
   justify-content: center;
   background-size: contain;
-  opacity: 0;
+  scroll-behavior: smooth;
+
   transition: 0.5s;
-  background-image: url(../Imagenes/gif3.gif);
+  background-image: url(/src\assets\Proyecto\Imagenes\gif3.gif);
 }
 
 .link {
@@ -64,13 +61,16 @@ display: flex;
   font-size: 3rem;
   text-align: center;
   background-color: rgba(255, 255, 255, 0.732);
+  scroll-behavior: smooth;
+
 }
 
 /* .content h2, a{
-  color:rgb(255, 255, 255, .8);
-}  */
+    color:rgb(255, 255, 255, .8);
+  }  */
 
 .card:hover .content {
-  opacity: 1;
   transform: scale(1.2);
+  scroll-behavior: smooth;
+
 }

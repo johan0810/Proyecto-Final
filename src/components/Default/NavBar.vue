@@ -17,5 +17,5 @@
 </template>
 
 <style scoped>
-@import url(/src\assets\Proyecto\Estilos\Navbar.css);
+@import url(/src\assets\Proyecto\Estilos\Admin\Navbar.css);
 </style>

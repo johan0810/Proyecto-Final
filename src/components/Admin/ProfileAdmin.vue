@@ -8,7 +8,7 @@
 </template>
 
 <style scoped>
-@import url(/src\assets\Proyecto\Estilos\Cuenta.css);
+@import url(/src\assets\Proyecto\Estilos\User\Cuenta.css);
 </style>
 
 <script>

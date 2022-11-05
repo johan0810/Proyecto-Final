@@ -92,6 +92,8 @@
   height: 90vh;
   padding: 0%;
   box-sizing: border-box;
+  scroll-behavior:smooth;
+
   /* background-image: url(../Imagenes/imagen1.jpg);
   background-size: contain; */
 
@@ -107,6 +109,8 @@
 .main{
   display: flex;
   flex-flow: row;
+  scroll-behavior:smooth;
+
 }
 
 
@@ -146,3 +150,9 @@
   
 } */
 
+#body2{
+  /* border: 10px solid rebeccapurple; */
+  /* overflow: hidden; */
+  scroll-behavior: smooth;
+  border: 10ox solid red;
+}

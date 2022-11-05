@@ -1,21 +1,23 @@
 <template>
-  <div class="container">
-    <p>Name:{{ user.name }}</p>
-    <p>Email:{{ user.email }}</p>
-    <p>created_at: {{ user.created_at }}</p>
-    <p>crea {{ user.password }}</p>
-
-    <div class="d">
-    <!-- <button class="btn btn-primary" type="button" @click="logout()">Cerrar Sesion</button> -->
-    
+  <div class="container-body" id="contain1">
+    <div class="container" id="contain2">
+      <nav id="nav2">
+        <div class="foto"></div>
+        <!-- <div class="p"><h1>Mi Perfil</h1></div> -->
+      </nav>
+      <div class="profile">
+        <p>{{ user.name }}</p>
+        <p>{{ user.email }}</p>
+      </div>
     </div>
-
-   
+    <div class="d">
+      <!-- <button class="btn btn-primary" type="button" @click="logout()">Cerrar Sesion</button> -->
+    </div>
   </div>
 </template>
 
 <style scoped>
-@import url(/src\assets\Proyecto\Estilos\Cuenta.css);
+@import url(/src\assets\Proyecto\Estilos\User\Cuenta.css);
 </style>
 
 <script>
@@ -29,7 +31,6 @@ export default {
   },
 
   mounted() {
-    
     if (localStorage.token) {
       this.token = localStorage.token;
       this.user = JSON.parse(localStorage.user);

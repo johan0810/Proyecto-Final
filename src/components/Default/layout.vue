@@ -15,5 +15,5 @@
 </template>
 
 <style scoped>
-@import url(/src\assets\Proyecto\Estilos\2.css);
+@import url(/src\assets\Proyecto\Estilos\Default\2.css);
 </style>

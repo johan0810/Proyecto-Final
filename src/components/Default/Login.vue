@@ -173,7 +173,7 @@
 </template>
 
 <style scoped>
-@import url(/src\assets\Proyecto\Estilos\Login.css);
+@import url(/src\assets\Proyecto\Estilos\Default\Login.css);
 </style>
 
 <script>

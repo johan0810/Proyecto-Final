@@ -1,16 +1,13 @@
 <template>
-<div class="container-body">
-<div class="container">
-   <router-view></router-view>
-   </div>   
-
-</div>
-   
- 
+  <div class="container-body">
+    <div class="container">
+      <router-view></router-view>
+    </div>
+  </div>
 </template>
 
 <style scoped>
-@import url(/src\assets\Proyecto\Estilos\CuentaAdmin.css);
+@import url(/src\assets\Proyecto\Estilos\Admin\CuentaAdmin.css);
 </style>
 
 <script>
@@ -24,10 +21,9 @@ export default {
   },
 
   mounted() {
-    this.$router.push("/admin/inicio")
+    this.$router.push("/admin/inicio");
   },
-  methods:{
-
+  methods: {
     async get_user() {
       try {
         console.log(this.token);
@@ -67,9 +63,8 @@ export default {
             message: e.response.data.message,
           },
         });
-       
       }
     },
-  }
+  },
 };
 </script>

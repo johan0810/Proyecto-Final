@@ -1,16 +1,15 @@
 <template>
- 
-
   <div class="container-body">
+      <NavBarUser></NavBarUser>
+
     <div class="containerr" id="container">
-  <NavBarUser></NavBarUser>
 
       <div class="seccion">
         <div class="seccion1">
           <div class="card1">
             <div class="content1">
               <router-link class="link" to="/user/profile">
-                <div>CONFIGURACIONES</div>
+                <div>CONFIGURACION DE CUENTA</div>
               </router-link>
             </div>
           </div>
@@ -48,13 +47,10 @@
             </div>
           </div>
         </div>
-        
-         
-        
       </div>
     </div>
     <div id="dos">
-     <div class="cerrar" @click="logout()"></div>
+      <div class="cerrar" @click="logout()"></div>
       <div class="icons1"></div>
       <div class="aprendiz" v-if="user.roles_id == 2">
         <h2>Aprendiz</h2>
@@ -69,16 +65,16 @@
   </div>
 </template>
     <style scoped>
-@import url(/src\assets\Proyecto\Estilos\Cuenta.css);
+@import url(/src\assets\Proyecto\Estilos\User\Cuenta.css);
 </style>
 
 
 <script>
-import NavBarUser from './NavBarUser.vue'
+import NavBarUser from "./NavBarUser.vue";
 
 export default {
   components: {
-    NavBarUser
+    NavBarUser,
   },
   data() {
     return {

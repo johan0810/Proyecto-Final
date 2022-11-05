@@ -50,7 +50,7 @@
 </template>
 
 <style scoped>
-@import url(/src\assets\Proyecto\Estilos\agregar.css);
+@import url(/src\assets\Proyecto\Estilos\Admin\agregar.css);
 </style>
 
 <script>

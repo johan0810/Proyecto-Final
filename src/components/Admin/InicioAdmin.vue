@@ -1,4 +1,17 @@
 <template>
+ <div id="dos">
+     <div class="cerrar" @click="logout()"></div>
+      <div class="icons1"></div>
+      <div class="aprendiz" v-if="user.roles_id == 2">
+        <h2>Aprendiz</h2>
+      </div>
+
+      <div class="aprendiz" v-else><h2>Administrador</h2></div>
+      <div class="icons2"></div>
+      <div class="usuario">
+        <h2>{{ user.name }}</h2>
+      </div>
+    </div>
   <div class="seccion">
     <!-- <router-link class="link" to="/admin/agregar_pregunta">
       <div id="secciones">PREGUNTAS</div>
@@ -24,7 +37,7 @@
   </div>
 </template>
     <style scoped>
-@import url(/src\assets\Proyecto\Estilos\CuentaAdmin.css);
+@import url(/src\assets\Proyecto\Estilos\Admin\CuentaAdmin.css);
 </style>
 
 

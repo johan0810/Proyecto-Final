@@ -23,5 +23,5 @@
 </template>
 
 <style scoped>
-@import url(/src\assets\Proyecto\Estilos\NavUser.css);
+@import url(/src\assets\Proyecto\Estilos\User\NavUser.css);
 </style>

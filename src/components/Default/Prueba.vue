@@ -50,7 +50,7 @@
 </template>
 
 <style scoped>
-@import url(/src\assets\Proyecto\Estilos\Prueba.css);
+@import url(/src\assets\Proyecto\Estilos\User\Prueba.css);
 </style>
 
 <script>

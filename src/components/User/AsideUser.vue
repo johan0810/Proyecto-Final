@@ -101,7 +101,7 @@
   </div>
 </template>
 <style scoped>
-@import url(/src\assets\Proyecto\Estilos\aside.css);
+@import url(/src\assets\Proyecto\Estilos\Default\aside.css);
 </style>
 <script>
 export default {

@@ -5,6 +5,7 @@
   height: 100vh;
   border: 0px solid red;
   background: white;  
+  scroll-behavior: smooth;
 }
 #uno {
   display: flex;
@@ -33,7 +34,7 @@
 
 .logo {
   display: flex;
-  background-image: url(../Logo/logo2.png) !important ;
+  background-image: url(/src\assets\Proyecto\Logo\logo2.png) !important ;
   background:white    ;
   border-radius: 1rem;
   margin: 1rem;

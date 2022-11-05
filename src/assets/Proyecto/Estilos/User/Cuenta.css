@@ -3,6 +3,8 @@
   flex-flow: row;
   justify-content: center;
   border: 0px solid rebeccapurple;
+  scroll-behavior:smooth;
+
 }
 
 /* #secciones{
@@ -18,15 +20,20 @@
   align-items: center;
 } */
 
-#containerr {
+.containerr {
   display: flex;
   flex-flow: column;
-  border: 5px solid red;
+  border: 0px solid red ;
   align-items: center;
   font-family: tipo_letra3;
   font-size: 1.5rem;
   color: orange;
+  scroll-behavior:smooth;
+  /* min-height: 100vh; */
+
 }
+
+
 
 .fade-enter-from,
 .fade-leave-to {
@@ -84,7 +91,7 @@
   height: 25vh;
   border-radius: 1rem;
   /* background-image: url(../Imagenes/img_Publicidad/anuncio3.jpg)  ; */
-  background-image: url(../iconos/2.png);
+  background-image: url(/src\assets\Proyecto\iconos\2.png);
   background-repeat: no-repeat;
   background-size: contain;
   box-shadow: 3px 5px 5px 5px rgb(23, 189, 255);
@@ -97,7 +104,7 @@
   height: 25vh;
   border-radius: 1rem;
   /* background-image: url(../Imagenes/img_Publicidad/anuncio3.jpg)  ; */
-  background-image: url(../iconos/5.png);
+  background-image: url(/src\assets\Proyecto\iconos\5.png);
 
   background-size: contain;
   box-shadow: 3px 5px 5px 5px rgb(23, 189, 255);
@@ -109,7 +116,7 @@
   height: 25vh;
   border-radius: 1rem;
   /* background-image: url(../Imagenes/img_Publicidad/anuncio3.jpg)  ; */
-  background-image: url(../iconos/20.png);
+  background-image: url(/src\assets\Proyecto\iconos\20.png);
 
   background-size: contain;
   box-shadow: 3px 5px 5px 5px rgb(23, 189, 255);
@@ -150,7 +157,7 @@
   height: 25vh;
   border-radius: 1rem;
   /* background-image: url(../Imagenes/img_Publicidad/anuncio3.jpg)  ; */
-  background-image: url(../iconos/1.png);
+  background-image: url(/src\assets\Proyecto\iconos\1.png);
 
   background-size: contain;
   box-shadow: 3px 5px 5px 5px rgb(33, 32, 98);
@@ -164,7 +171,7 @@
 
   border-radius: 1rem;
   /* background-image: url(../Imagenes/img_Publicidad/anuncio3.jpg)  ; */
-  background-image: url(../iconos/22.png);
+  background-image: url(/src\assets\Proyecto\iconos\22.png);
 
   background-size: contain;
   box-shadow: 3px 5px 5px 5px rgb(33, 32, 98);
@@ -262,15 +269,26 @@
   background-size: cover;
   background-repeat: no-repeat;
   border: 0px solid red;
-  
-  height: 86.2vh;
+  scroll-behavior:smooth;
+  min-height: 100vh;
 }
+
+.containe-body{
+  border:00px solid yellow;
+  min-height: 100vh;
+}
+main{
+  /* border:10px solid yellow; */
+/* overflow: hidden; */
+
+
+}
+
 
 #dos {
   display: flex;
-  height: 20%;
   background: rgba(51, 184, 229, 0.55);
-  margin-top: 0vh;
+  margin-top: 3.5vh;
   border: 0px solid rebeccapurple;
   justify-content: right;
   padding: 0rem;
@@ -347,4 +365,54 @@
   margin: 2rem;
   background: rgba(11, 184, 11, 0.72);
   border-radius: 1rem;
+}
+
+
+#nav2{
+  /* display: flex;
+  flex-flow: column; */
+  height: 7rem;
+  background: #1d1b31;
+  font-family: tipo_letra;
+  color: red;
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+  padding: 1rem;
+}
+.foto{
+  width: 10rem;
+  height: 10rem;
+  border: 5px solid #1d1b31;
+  background-image:url(/src\assets\Proyecto\Imagenes\perfil.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  border-radius: 2rem;
+}
+#contain1{
+  background: rgba(51, 184, 229, 0.55);
+  min-height: 100vh;
+  display: flex;
+  flex-flow: column;
+
+}
+#contain2{
+  display: flex;
+  flex-flow: column;
+  background: white;
+  min-height: 100vh;
+  padding: 0%;
+}
+.profile{
+  display: flex;
+  flex-flow: column;
+  width: 50%;
+  font-family: tipo_letra;
+  border: 0px solid red;
+  margin: 4rem;
+}
+
+#contai{
+  scroll-behavior: smooth;
+  border: 10px solid rgba(45, 215, 248, 0.72);
 }

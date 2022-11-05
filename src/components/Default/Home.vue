@@ -29,7 +29,7 @@
 
 
 <style scoped>
-@import url(/src\assets\Proyecto\Estilos\inicio.css);
+@import url(/src\assets\Proyecto\Estilos\Default\inicio.css);
 </style>
 <script>
 // import Home from './Home.vue'

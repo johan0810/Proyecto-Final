@@ -1,5 +1,7 @@
 <template>
   <div class="container">
+              <button type="button" class="btn btn-danger" id="botton"><h1>PRUEBA</h1></button>
+
     <!-- Modal -->
     <div
       class="modal fade"
@@ -64,7 +66,7 @@
             <!-- <label class="form-check-label" for="flexSwitchCheckDefault" v-for="ans in list_answer" :key="ans">{{ans.options}}</label> -->
 
             <div v-for="(ans, i) in get_answers(questions.id)" :key="'ans' + i">
-              {{ ans.options }}
+              <label for="">{{ ans.options }}</label>
 
               <input
                 class="form-check-input"
@@ -75,11 +77,14 @@
                 id="flexSwitchCheckDefault"
                 @click="edit(ans)"
               />
+
             </div>
+            
           </div>
         </div>
       </th>
     </thead>
+    
   </div>
 
   <!-- <div class="container">
@@ -94,7 +99,7 @@
 </template>
 
   <style scoped>
-@import url(/src\assets\Proyecto\Estilos\agregar.css);
+@import url(/src\assets\Proyecto\Estilos\Admin\agregar.css);
 </style>
 >
 <script>
@@ -121,6 +126,13 @@ export default {
 
   mounted() {
     this.index();
+    
+    var boton = document.getElementById('botton');
+
+    boton.addEventListener('click', function(){
+      alert('clik')
+    })
+
   },
 
   created() {},

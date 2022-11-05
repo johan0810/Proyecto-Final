@@ -36,7 +36,7 @@
 </template>
 
 <style scoped>
-@import url(/src\assets\Proyecto\Estilos\Register.css);
+@import url(/src\assets\Proyecto\Estilos\Default\Register.css);
 </style>
 
 <script>

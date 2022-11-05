@@ -7,11 +7,8 @@
   <!-- <router-view name="NavBar"> </router-view> -->
   <!-- <router-view name="Aside"> </router-view>  -->
 
-  <!-- <router-view name="NavBar"> </router-view> -->
+  <router-view name="NavBar"> </router-view>
   <router-view name="Aside"> </router-view>
-
-
-
 
   <router-view v-slot="{ Component }">
     <transition name="bounce" >
@@ -27,7 +24,7 @@
 </template>
 
 <style scoped>
-@import url(/src\assets\Proyecto\Estilos\Layout.css);
+@import url(/src\assets\Proyecto\Estilos\Default\Layout.css);
 </style>
 
 <script>

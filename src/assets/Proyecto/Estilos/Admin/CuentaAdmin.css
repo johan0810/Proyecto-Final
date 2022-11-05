@@ -1,0 +1,140 @@
+.container-body{
+display: flex;
+  /* background-image: url(/src/assets/Proyecto/Imagenes/p.png); */
+  background-size: cover;
+  border: 0px solid red;
+  
+
+  }
+
+.container{
+  border: 0px solid red;
+}
+
+
+.seccion {
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  border: 0px solid rebeccapurple;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.5s ease-in-out;
+}
+.card {
+  width: 30%;
+  height: 35vh;
+
+  border-radius: 3rem;
+  /* background-image: url(/src/assets/Proyecto/Imagenes/img_Publicidad/anuncio3.jpg)  ; */
+  background-image: url(/src/assets/Proyecto/Imagenes/gif3.gif);
+  background-size: contain;
+  box-shadow: 3px 5px 5px black;
+  margin: 4rem;
+  top: 6rem;
+}
+
+.content {
+  width: 100%;
+  height: 100%;
+  border-radius: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-size: contain;
+  opacity: 0;
+  transition: 0.5s;
+  background-image: url(/src/assets/Proyecto/Imagenes/gif3.gif);
+}
+
+.link {
+  border: 0px solid red;
+  text-decoration: none;
+  color: rgb(33, 4, 176);
+  font-family: tipo_letra7;
+  font-size: 3rem;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.732);
+}
+
+/* .content h2, a{
+  color:rgb(255, 255, 255, .8);
+}  */
+
+.card:hover .content {
+  opacity: 1;
+  transform: scale(1.2);
+}
+
+
+#dos {
+  display: flex;
+  height: 20%;
+  background: rgba(51, 184, 229, 0.55);
+  margin-top: 0vh;
+  border: 0px solid rebeccapurple;
+  justify-content: right;
+  padding: 0rem;
+  align-items: center;
+  position: sticky;
+  top: 0px;
+  z-index: 1;
+}
+
+.usuario {
+  background: white;
+  height: 3rem;
+  border-radius: 1rem;
+  width: 25%;
+  padding: 0.5rem;
+  font-family: tipo_letra4;
+  margin-right: 3rem;
+
+  text-align: center;
+}
+.aprendiz {
+  background: white;
+  height: 3rem;
+  border-radius: 1rem;
+  width: 25%;
+  font-family: tipo_letra4;
+  margin-right: 5rem;
+  padding: 0.5rem;
+  text-align: center;
+}
+.aprendiz:hover {
+  color: white;
+  background: #1d1b31;
+}
+.usuario:hover {
+  color: white;
+  background: #1d1b31;
+}
+
+.icons1 {
+  display: flex;
+  width: 5rem;
+  height: 4rem;
+  border: 0px solid yellow;
+  background-image: url(/src\assets\Proyecto\iconos\6.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.icons2 {
+  display: flex;
+  width: 5rem;
+  height: 4rem;
+  border: 0px solid yellow;
+  background-image: url(\src\assets\Proyecto\iconos\16.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
