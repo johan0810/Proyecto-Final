@@ -5,7 +5,7 @@
   display: flex;
   font-family: tipo_letra;
   /*ESTRUCTURA/*/
-  background: rgba(51, 184, 229, 0.55);
+  background: #025159;
   position: sticky;
   top: 0px;
   z-index: 1;
@@ -50,17 +50,17 @@
   height: auto;
   border: 0px solid wheat;
   font-family: tipo_letra3;
-  color: white;
+  color: white ;
   font-size: 2.5rem;
   text-align: center;
   align-self: center;
 }
 
 .CapaTitulo {
-  color: white;
+  color: #013440;
   width: 60%;
   height: max-content;
-  background: #1d1b31;
+  background: #659AA6;
   margin: 1rem;
   border-radius: 1rem;
 }
@@ -107,7 +107,7 @@
 #dos {
   display: flex;
   height: 5rem;
-  background: rgba(51, 184, 229, 0.55);
+  background: #93BBBF;
   margin-top: 68vh;
 }
 /*////////////////////////  @MEDIA  /////////////////////////////////////*/

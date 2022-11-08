@@ -2,7 +2,11 @@
   <div class="container-body" data-offset="80" data-spy="scroll" data-target="#navegación">
     <!-- SECCION 0 -->
 
-    
+    <div class="badge">
+    <div class="text">
+    <h1>HOLA</h1>
+    </div>
+    </div>
     <div 
       class="container-fluid"
      id="seccion1"
