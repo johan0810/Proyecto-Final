@@ -93,7 +93,8 @@
   /* background-image: url(../Imagenes/img_Publicidad/anuncio3.jpg)  ; */
   background-image: url(/src\assets\Proyecto\iconos\2.png);
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: 100%;
+  background-position: center;
   box-shadow: 3px 5px 5px 5px rgb(23, 189, 255);
   margin: 1rem;
   border: 0px solid red;
@@ -105,8 +106,9 @@
   border-radius: 1rem;
   /* background-image: url(../Imagenes/img_Publicidad/anuncio3.jpg)  ; */
   background-image: url(/src\assets\Proyecto\iconos\5.png);
-
-  background-size: contain;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
   box-shadow: 3px 5px 5px 5px rgb(23, 189, 255);
   margin: 1rem;
   border: 0px solid red;
@@ -118,7 +120,9 @@
   /* background-image: url(../Imagenes/img_Publicidad/anuncio3.jpg)  ; */
   background-image: url(/src\assets\Proyecto\iconos\20.png);
 
-  background-size: contain;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
   box-shadow: 3px 5px 5px 5px rgb(23, 189, 255);
   margin: 1rem;
   border: 0px solid red;
@@ -159,7 +163,9 @@
   /* background-image: url(../Imagenes/img_Publicidad/anuncio3.jpg)  ; */
   background-image: url(/src\assets\Proyecto\iconos\1.png);
 
-  background-size: contain;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
   box-shadow: 3px 5px 5px 5px rgb(33, 32, 98);
   margin: 1rem;
   border: 0px solid red;
@@ -173,7 +179,9 @@
   /* background-image: url(../Imagenes/img_Publicidad/anuncio3.jpg)  ; */
   background-image: url(/src\assets\Proyecto\iconos\22.png);
 
-  background-size: contain;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
   box-shadow: 3px 5px 5px 5px rgb(33, 32, 98);
   margin: 1rem;
   border: 0px solid red;
@@ -287,12 +295,16 @@ main{
 
 #dos {
   display: flex;
-  background: rgba(51, 184, 229, 0.55);
+  background: #025159;
   margin-top: 3.5vh;
   border: 0px solid rebeccapurple;
   justify-content: right;
   padding: 0rem;
   align-items: center;
+  position: absolute;
+  bottom: 0;
+  width: 100vw;
+  overflow: hidden;
 }
 .usuario {
   background: white;
@@ -351,7 +363,7 @@ main{
   justify-content: center;
   border: 0px solid rebeccapurple;
   margin: 2rem;
-  background: rgba(247, 190, 84, 0.653);
+  /* background: rgba(247, 190, 84, 0.653); */
   border-radius: 1rem;
 }
 .seccion2 {
@@ -363,7 +375,7 @@ main{
   justify-content: center;
   border: 0px solid rebeccapurple;
   margin: 2rem;
-  background: rgba(11, 184, 11, 0.72);
+  /* background: rgba(11, 184, 11, 0.72); */
   border-radius: 1rem;
 }
 

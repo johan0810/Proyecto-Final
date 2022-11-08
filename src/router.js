@@ -119,7 +119,10 @@ const routes = [
 
       {
         path: "Documentacion",
-        component: Document,
+        components: {
+          default: Document,
+        },
+
         children: [
           {
             path: "Setting",

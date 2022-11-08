@@ -93,14 +93,15 @@
 .icons3{
   display: flex;
   width: 5rem;
-  height: 4rem;
+  height: 3rem;
   border-radius: 1rem;
-  margin-top: 1rem;
+  /* margin-top: 1rem; */
   border: 0px solid yellow;
-  background-image: url(/src\assets\Proyecto\iconos\26.png);
+  background-image: url(/src\assets\Proyecto\iconos\8.png);
   /* background-color: white; */
   background-size: contain;
   background-repeat: no-repeat;
+  margin-left: 0rem;
 }
 
 

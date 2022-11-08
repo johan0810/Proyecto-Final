@@ -1,8 +1,9 @@
 <template>
+  <NavBarUser></NavBarUser>
   <div class="container-body">
-    <router-link to="/user/inicio" id="boton-inicio" class="link">
+    <!-- <router-link to="/user/inicio" id="boton-inicio" class="link">
      <div class="home"></div>
-    </router-link>
+    </router-link> -->
 
     <div class="tex">
       <h1><b> Documentación Del Sena</b></h1>
@@ -24,43 +25,49 @@
     </div>
     <div class="div">
       <div class="container-main">
-        <article id="documento1">
-          <h1>Reglamento del Aprendiz</h1>
-          <div class="logo" id="img1"></div>
-          <div class="texto">
-            El Reglamento del Aprendiz SENA se aplica a todas las personas
-            matriculadas en los programas de formación profesional del Sena.
-          </div>
-          <a id="button" class="btn" href="#manual" role="button">Ver</a>
-        </article>
-        <article id="documento1">
-          <h1>Mision y Vision del Sena</h1>
-          <div class="logo" id="img2"></div>
-          <div class="texto">
-            El SENA, es un establecimiento público del orden nacional, con
-            personería jurídica, patrimonio propio e independiente.
-          </div>
-          <a id="button" class="btn" href="#mision-vision" role="button">Ver</a>
-        </article>
-        <article id="documento1">
-          <h1>Himno del SENA</h1>
-          <div class="logo" id="img3"></div>
-          <div class="texto">
-            El himno del SENA es uno de los símbolos institucionales que fomenta
-            el amor por una de las instituciones más importantes del país.
-          </div>
-          <a id="button" class="btn" href="#himno" role="button">Ver</a>
-        </article>
-        <article id="documento1">
-          <h1>Valores y Compromisos Institucionales</h1>
-          <div class="logo" id="img4"></div>
-          <div class="texto">
-            Los servidores públicos del SENA, contribuyen a dar respuesta al
-            reclamo generalizado en contra de la corrupción y vivir una política
-            de integridad.
-          </div>
-          <a id="button" class="btn btn" href="#valores" role="button">Ver</a>
-        </article>
+        <div class="articulos">
+          <article id="documento1">
+            <h1>Reglamento del Aprendiz</h1>
+            <div class="logo" id="img1"></div>
+            <div class="texto">
+              El Reglamento del Aprendiz SENA se aplica a todas las personas
+              matriculadas en los programas de formación profesional del Sena.
+            </div>
+            <a id="button" class="btn" href="#manual" role="button">Ver</a>
+          </article>
+          <article id="documento1">
+            <h1>Mision y Vision del Sena</h1>
+            <div class="logo" id="img2"></div>
+            <div class="texto">
+              El SENA, es un establecimiento público del orden nacional, con
+              personería jurídica, patrimonio propio e independiente.
+            </div>
+            <a id="button" class="btn" href="#mision-vision" role="button"
+              >Ver</a
+            >
+          </article>
+          <article id="documento1">
+            <h1>Himno del SENA</h1>
+            <div class="logo" id="img3"></div>
+            <div class="texto">
+              El himno del SENA es uno de los símbolos institucionales que
+              fomenta el amor por una de las instituciones más importantes del
+              país.
+            </div>
+            <a id="button" class="btn" href="#himno" role="button">Ver</a>
+          </article>
+          <article id="documento1">
+            <h1>Valores y Compromisos Institucionales</h1>
+            <div class="logo" id="img4"></div>
+            <div class="texto">
+              Los servidores públicos del SENA, contribuyen a dar respuesta al
+              reclamo generalizado en contra de la corrupción y vivir una
+              política de integridad.
+            </div>
+            <a id="button" class="btn btn" href="#valores" role="button">Ver</a>
+          </article>
+        </div>
+        <div class="diseño"></div>
       </div>
     </div>
 
@@ -415,9 +422,14 @@
 @import url(/src\assets\Proyecto\Estilos\User\document.css);
 </style>
 
-
 <script>
+import NavBarUser from "../User/NavBarUser.vue";
+
 export default {
+  components: {
+    NavBarUser,
+  },
+
   mounted() {
     const prev = document.querySelector(".prev");
     const next = document.querySelector(".next");
