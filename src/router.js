@@ -5,7 +5,7 @@ import Register from "./components/Default/Register.vue";
 import Home from "./components/Default/Home.vue";
 import NavBar from "./components/Default/NavBar.vue";
 import NavBarPassword from "./components/Default/NavBarPassword.vue";
-import Recorrido from "./components/Default/Recorrido.vue";
+// import Recorrido from "./components/Default/Recorrido.vue";
 import Prueba from "./components/Default/Prueba.vue";
 import Document from "./components/Default/Document.vue";
 import Pdf from "./components/Default/Pdf.vue";
@@ -38,15 +38,33 @@ import Usuarios from "./components/Admin/Usuarios.vue";
 import SettingAdmin from "./components/Admin/SettingAdmin.vue";
 import { LayoutPlugin } from "bootstrap-vue";
 
+///////////////RECORRIDO///////////////////
+
+import Recorrido from "/Recorrido.vue";
+
+/////////////////////////////////////7777
+
 const routes = [
   /////////////DEFAULT//////////////
   {
+    path: "/Recorrido",
+    name: "Recorrido",
+    components: {
+      default: Recorrido,
+      // NavBar: NavBar,
+    },
+  },
+
+
+
+
+  {
     path: "/",
     name: "Home",
-    components: {
-      NavBar: NavBar,
-      default: Home,
-    },
+    component: 
+      // NavBar: NavBar,
+      Home,
+    
   },
 
   {
@@ -82,14 +100,14 @@ const routes = [
   },
   /////////////RECORRIDO//////////////
 
-  {
-    path: "/Recorrido",
-    name: "Recorrido",
-    components: {
-      default: Recorrido,
-      NavBar: NavBar,
-    },
-  },
+  // {
+  //   path: "/Recorrido",
+  //   name: "Recorrido",
+  //   components: {
+  //     default: Recorrido,
+  //     // NavBar: NavBar,
+  //   },
+  // },
 
   /////////////USUARIO//////////////
   {

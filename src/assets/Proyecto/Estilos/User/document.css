@@ -1,3 +1,19 @@
+.body{
+  display: flex;
+  flex-flow: column;
+border: 0px solid red;
+top: 2rem;
+
+}
+.inicio{
+  display: flex;
+  flex-flow: column;
+}
+nav{
+  position: sticky;
+  z-index: 11;
+  top: 0;
+}
 .container-body {
   display: flex;
   justify-content: center;
@@ -40,10 +56,11 @@
   font-family: tipo_letra13;
   /* overflow: scroll; */
   /* background-image: url(../Imagenes/img5.png); */
-  background-color: white;
+  /* background-color: white; */
   background-position: fixed;
   color: black;
 }
+
 
 #himno {
 }
@@ -72,6 +89,8 @@
   overflow: hidden;
   height: 100vh;
 }
+
+
 
 .scroll {
   display: flex;
@@ -110,13 +129,76 @@
   background-image: url(/src\assets\Proyecto\iconos\37.png);
   background-size: cover;
   background-repeat: no-repeat;
-  border: 0px solid rgb(0, 242, 255);
+  border: 2px solid rgb(0, 242, 255);
   margin-inline: 50vw;
   margin-top: 1rem;
 }
 .todo:hover{
   border-radius: 100%;
 }
+
+#slash{
+  display: flex;
+  width: 4rem;
+  height: 4rem;
+  background-image: url(/src\assets\Proyecto\iconos\35.png);
+  transform: rotate(180deg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: 0px solid rgb(0, 242, 255);
+  margin-inline: 50vw;
+
+
+}
+
+#slash:hover{
+  animation: scale2 1s  ease;
+
+  
+
+}
+
+/* video{
+z-index: -1;
+position: absolute;
+height: 117%;
+} */
+
+
+
+/*///////////////////ANIMACIONES//////////7/////////*/
+
+/*/////BOTONES///////*/
+
+
+  @keyframes scale {
+    0% {
+      transform: rotate(99deg) ;
+      
+    }
+    100% {
+      transform: rotate(0,1) ;
+      
+    }
+  }
+
+
+/*/////DESPLAZAR///////*/
+
+
+@keyframes scale2 {
+  0% {
+    transform: rotate(99deg) ;
+    float: right;
+    
+  }
+  100% {
+    transform: rotate(0,1) ;
+    
+  }
+}
+
+/*////////////////////////////////////7/////////*/
 
 /*////////////////////////////////////7/////////*/
 
@@ -216,7 +298,8 @@ article {
 }
 article:hover {
   background: rgba(3, 172, 3, 0.745);
-  animation: ease-in;
+  animation: scale 1s  ease;
+
   scroll-behavior: smooth;
 }
 article h1 {
@@ -364,6 +447,8 @@ iframe {
       skewX(180deg) skewY(360deg);
     transform: scale(2) rotate(360deg) translateX(1px) translateY(1px)
       skewX(180deg) skewY(360deg);
+
+      animation: scale 1s ease;
 }
 
 #modal {

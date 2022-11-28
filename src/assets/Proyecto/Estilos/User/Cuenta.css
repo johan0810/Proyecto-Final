@@ -165,7 +165,7 @@
 
   background-repeat: no-repeat;
   background-size: 100%;
-  background-position: center;
+  background-position: center;  
   box-shadow: 3px 5px 5px 5px rgb(33, 32, 98);
   margin: 1rem;
   border: 0px solid red;
@@ -276,9 +276,12 @@
   /* background-image: url(../Imagenes/p.png); */
   background-size: cover;
   background-repeat: no-repeat;
-  border: 0px solid red;
+  border: 0px solid rgb(64, 243, 14);
+
   scroll-behavior:smooth;
   min-height: 100vh;
+  width: 100%;
+  
 }
 
 .containe-body{
@@ -427,4 +430,44 @@ main{
 #contai{
   scroll-behavior: smooth;
   border: 10px solid rgba(45, 215, 248, 0.72);
+}
+
+video{
+
+  position: fixed;
+  z-index: -1;
+  min-height: 100%;
+  min-width: 100%;
+  top: 50%;
+  left: 50%;
+
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.na{
+  border: 2px solid gold;
+  width: 20rem;
+  height: 10rem;
+}
+
+
+#img {
+  margin-top: 0.5rem;
+  width: 12rem;
+  height: 11rem;
+  border-radius: 1.5rem 0 1.5rem 0;
+  -o-object-fit: cover;
+  object-fit: cover;
+  cursor: pointer;
+  transition: all 1s ease;
+  box-shadow: 0px 0px 5px 0px #8a8a8a;
+  border: 5px solid rgb(205, 11, 11);
+  z-index: 111;
+}
+
+.div{
+  
+  border: 1px solid red !important;
+  width: 20rem;
+  height: 20rem;
 }

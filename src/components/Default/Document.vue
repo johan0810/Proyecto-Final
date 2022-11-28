@@ -1,78 +1,85 @@
 <template>
-  <NavBarUser></NavBarUser>
-  <div class="container-body">
-    <!-- <router-link to="/user/inicio" id="boton-inicio" class="link">
-     <div class="home"></div>
-    </router-link> -->
+  <div class="body" id="body">
+    <div class="inicio">
+      <nav id="nav"><NavBarUser></NavBarUser></nav>
 
-    <div class="tex">
-      <h1><b> Documentación Del Sena</b></h1>
-    </div>
-    <div class="slider" id="slider1">
-      <div class="content">
-        <div class="photo1"></div>
-        <div class="photo2"></div>
-        <div class="photo3"></div>
-        <div class="photo4"></div>
-      </div>
-    </div>
-  </div>
-  <div class="slider">
-    <div class="titulo1">
-      <ul>
-        <li><h1>Observa y Consulta:</h1></li>
-      </ul>
-    </div>
-    <div class="div">
-      <div class="container-main">
-        <div class="articulos">
-          <article id="documento1">
-            <h1>Reglamento del Aprendiz</h1>
-            <div class="logo" id="img1"></div>
-            <div class="texto">
-              El Reglamento del Aprendiz SENA se aplica a todas las personas
-              matriculadas en los programas de formación profesional del Sena.
-            </div>
-            <a id="button" class="btn" href="#manual" role="button">Ver</a>
-          </article>
-          <article id="documento1">
-            <h1>Mision y Vision del Sena</h1>
-            <div class="logo" id="img2"></div>
-            <div class="texto">
-              El SENA, es un establecimiento público del orden nacional, con
-              personería jurídica, patrimonio propio e independiente.
-            </div>
-            <a id="button" class="btn" href="#mision-vision" role="button"
-              >Ver</a
-            >
-          </article>
-          <article id="documento1">
-            <h1>Himno del SENA</h1>
-            <div class="logo" id="img3"></div>
-            <div class="texto">
-              El himno del SENA es uno de los símbolos institucionales que
-              fomenta el amor por una de las instituciones más importantes del
-              país.
-            </div>
-            <a id="button" class="btn" href="#himno" role="button">Ver</a>
-          </article>
-          <article id="documento1">
-            <h1>Valores y Compromisos Institucionales</h1>
-            <div class="logo" id="img4"></div>
-            <div class="texto">
-              Los servidores públicos del SENA, contribuyen a dar respuesta al
-              reclamo generalizado en contra de la corrupción y vivir una
-              política de integridad.
-            </div>
-            <a id="button" class="btn btn" href="#valores" role="button">Ver</a>
-          </article>
+      <div class="container-body" id="inicio-todo">
+        <!-- <router-link to="/user/inicio" id="boton-inicio" class="link">
+     <div class="home"></div>
+      </router-link> -->
+
+        <div class="tex">
+          <h1><b> Documentación Del Sena</b></h1>
         </div>
-        <div class="diseño"></div>
+        <div class="slider" id="slider1">
+          <div class="content">
+            <div class="photo1"></div>
+            <div class="photo2"></div>
+            <div class="photo3"></div>
+            <div class="photo4"></div>
+          </div>
+        </div>
       </div>
+      <div class="titulo1">
+        <ul>
+          <li><h1>Observa y Consulta:</h1></li>
+        </ul>
+      </div>
+      <div class="div">
+        <div class="container-main">
+          <div class="articulos">
+            <article id="documento1">
+              <h1>Reglamento del Aprendiz</h1>
+              <div class="logo" id="img1"></div>
+              <div class="texto">
+                El Reglamento del Aprendiz SENA se aplica a todas las personas
+                matriculadas en los programas de formación profesional del Sena.
+              </div>
+              <a id="button" class="btn" href="#manual" role="button">Ver</a>
+            </article>
+            <article id="documento1">
+              <h1>Mision y Vision del Sena</h1>
+              <div class="logo" id="img2"></div>
+              <div class="texto">
+                El SENA, es un establecimiento público del orden nacional, con
+                personería jurídica, patrimonio propio e independiente.
+              </div>
+              <a id="button" class="btn" href="#mision-vision" role="button"
+                >Ver</a
+              >
+            </article>
+            <article id="documento1">
+              <h1>Himno del SENA</h1>
+              <div class="logo" id="img3"></div>
+              <div class="texto">
+                El himno del SENA es uno de los símbolos institucionales que
+                fomenta el amor por una de las instituciones más importantes del
+                país.
+              </div>
+              <a id="button" class="btn" href="#himno" role="button">Ver</a>
+            </article>
+            <article id="documento1">
+              <h1>Valores y Compromisos Institucionales</h1>
+              <div class="logo" id="img4"></div>
+              <div class="texto">
+                Los servidores públicos del SENA, contribuyen a dar respuesta al
+                reclamo generalizado en contra de la corrupción y vivir una
+                política de integridad.
+              </div>
+              <a id="button" class="btn btn" href="#valores" role="button"
+                >Ver</a
+              >
+            </article>
+          </div>
+          <div class="diseño"></div>
+        </div>
+      </div>
+ 
     </div>
 
     <div class="slider" id="slider2">
-      <a class="todo" href="#slider1"></a>
+         <a class="todo" href="#body"></a>
+
       <a class="scroll prev"></a>
       <a class="scroll next"></a>
       <div class="container-footer" id="manual">
@@ -80,7 +87,13 @@
           <ul>
             <li><h1>Reglamento del Aprendiz</h1></li>
           </ul>
-        </div>
+        </div> 
+        <!-- <video
+      src="/src\assets\Proyecto\Videos\video.mp4"
+      autoplay="true"
+      muted="true"
+      loop="true"
+    ></video> -->
         <div class="img3"></div>
 
         <div class="resumen">
@@ -412,6 +425,8 @@
               </blockquote>
             </div>
           </div>
+         <a class="todo" href="#body" id="slash"></a>
+
         </div>
       </div>
     </div>

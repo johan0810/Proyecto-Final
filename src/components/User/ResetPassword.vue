@@ -1,5 +1,5 @@
 <template>
-
+<div class="container-body">
   <p>{{ message }}</p>
 
   <div class="container">
@@ -40,6 +40,8 @@
       <p v-if="message">{{ message }}</p>
     </form>
   </div>
+</div>
+
 </template>
 <style scoped>
 @import url(/src\assets\Proyecto\Estilos\Default\Password.css);

@@ -1,9 +1,14 @@
 <template>
+ <!-- <video
+      src="/src\assets\Proyecto\Videos\video.mp4"
+      autoplay="true"
+      muted="true"
+      loop="true" poster=""
+    ></video> -->
   <div class="container-body">
-      <NavBarUser></NavBarUser>
-
+    <NavBarUser></NavBarUser>
+   
     <div class="containerr" id="container">
-
       <div class="seccion">
         <div class="seccion1">
           <div class="card1">

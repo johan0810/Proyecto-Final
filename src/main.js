@@ -18,3 +18,4 @@ import "bootstrap-vue/dist/bootstrap-vue.css";
 axios.defaults.baseURL = "http://127.0.0.1:8000"; //laravel serve
 
 createApp(App).use(router).use(VueAxios, axios).mount("#app");
+
