@@ -77,8 +77,8 @@
   background-size: cover;
   background-repeat: no-repeat;
   justify-content: right;
-  padding: 2rem;
-  padding-top: 4rem;
+  padding-right: 5rem;
+  padding-top: 2rem;
 }
 
 .container-footer {

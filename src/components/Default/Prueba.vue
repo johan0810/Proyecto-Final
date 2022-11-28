@@ -24,7 +24,7 @@
             id="titulo1"
           >
            <div class="pregunta">
-           <h1> {{ i + 1 }}- ¿{{ questions.question }}?</h1>
+           <h1> {{ i + 1 }}- {{ questions.question }}</h1>
            </div> 
           </span>
         </h4>
