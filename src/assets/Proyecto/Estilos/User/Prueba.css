@@ -18,17 +18,17 @@ html {
 }
 
 #blog span{
-    display: flex;
-    border: 0px solid yellow;
+    /* display: flex; */
+    border: 5px solid yellow;
     /* flex-flow: row; */
-    margin-top: 15px;
+    /* margin-top: 15px; */
 }
 .container-body{
     display: flex;
     flex-flow: column;
     margin-left: 4.8rem;
 }
-
+dd
 
 #seccion1 {
     display: flex;
@@ -46,6 +46,8 @@ html {
     display: flex;
     align-content: center;
     /* border: 1px solid green; */
+    border: 10px solid rgb(0, 255, 17) !important;
+
 }
 
 ul{

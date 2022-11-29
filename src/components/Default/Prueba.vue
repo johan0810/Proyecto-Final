@@ -1,55 +1,51 @@
 <template>
-  <div class="container-body" data-offset="80" data-spy="scroll" data-target="#navegación">
+  <div
+    class="container-body"
+    data-offset="80"
+    data-spy="scroll"
+    data-target="#navegación"
+  >
     <!-- SECCION 0 -->
 
     <div class="badge">
-    <div class="text">
-    <h1>HOLA</h1>
+      <div class="text">
+        <h1
+          style="
+            color: blue;
+            font-family: tipo_letra9;
+            font-size: 5rem;
+            margin: 0;
+          "
+        >
+          PRUEGUNTAS
+        </h1>
+      </div>
     </div>
-    </div>
-    <div 
+    <div
       class="container-fluid"
-     id="seccion1"
+      id="seccion1"
       v-for="(questions, i) in list_questions"
       :key="'pregunta' + i"
     >
-    <!-- <div class=""  v-bind:id="'seccion'+i" > -->
-    
-    
-    
+      <!-- <div class=""  v-bind:id="'seccion'+i" > -->
+
       <div id="blog">
-        <h4>
-          <span
-            class="text-black text-uppercase efecto e-derecha d100"
-            id="titulo1"
-          >
-           <div class="pregunta">
-           <h1> {{ i + 1 }}- {{ questions.question }}</h1>
-           </div> 
-          </span>
-        </h4>
+        <div class="pregunta">
+          <h1>{{ i + 1 }}- {{ questions.question }}</h1>
+        </div>
 
         <span
-          class="text-black font-weight-light efecto e-izquierda d400 titulo2" v-for="(ans, i) in get_answers(questions.id)" :key="'ans' + i"
+          class="text-black font-weight-light efecto e-izquierda d400 titulo2"
+          v-for="(ans, i) in get_answers(questions.id)"
+          :key="'ans' + i"
         >
-         
-          <label class="form-check-label" for="">
-          <ul>
-          <li>
-          <div class="div">
-          {{ ans.options }}
-          </div>
-          
-          </li>
-          
-          </ul>
-           
+          <label>
+            <input type="radio" value="1" name="p4" class="div" />
+            {{ ans.options }}
           </label>
         </span>
-       
       </div>
     </div>
-
   </div>
 </template>
 
@@ -63,11 +59,10 @@ export default {
     return {
       selected_question: null,
       list_questions: [],
-     
 
       ////
       list_answer: [],
-      
+
       ///
       edit_questions: {},
       copy_edit_questions: {},
