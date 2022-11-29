@@ -19,7 +19,7 @@ html {
 
 #blog span{
     /* display: flex; */
-    border: 5px solid yellow;
+    border: 0px solid yellow;
     /* flex-flow: row; */
     /* margin-top: 15px; */
 }
@@ -46,7 +46,7 @@ dd
     display: flex;
     align-content: center;
     /* border: 1px solid green; */
-    border: 10px solid rgb(0, 255, 17) !important;
+    border: 0px solid rgb(0, 255, 17) !important;
 
 }
 
@@ -55,17 +55,27 @@ ul{
     
 }
 
-.div{
-    display: flex;
-    width: 25rem;
-    /* border: 2px solid rebeccapurple; */
-    border-radius: 3rem;
-    padding-left: 3%;
-        
+
+
+.ss:hover{
+    background: #1c1381ab ;
+    cursor: pointer;
+    color: white;   
+    border-radius: 2rem;
+ 
 }
 
-.div:hover{
-    background: #1d1b31ab ;
-    cursor: pointer;
-    color: white;
+.ss{
+    margin: 1rem;
+    display: flex;
+    flex-flow: row;
+    width:20% ;
 }
+.footer{
+    border: 0px solid red;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+

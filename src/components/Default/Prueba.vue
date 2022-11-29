@@ -39,12 +39,19 @@
           v-for="(ans, i) in get_answers(questions.id)"
           :key="'ans' + i"
         >
-          <label>
-            <input type="radio" value="1" name="p4" class="div" />
+          <label class="ss">
+            <input type="text" value="
+            " name="p4" />
             {{ ans.options }}
           </label>
         </span>
       </div>
+    </div>
+    <div class="footer">
+      <div class="botton">
+        <button class="btn btn-danger">FINALIZAR</button>
+      </div>
+      <div class="result"><h1>Acertadas:</h1> <span id="resultado"> </span></div>
     </div>
   </div>
 </template>
