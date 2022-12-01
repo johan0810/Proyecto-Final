@@ -47,12 +47,7 @@
           :key="'ans' + i"
         >
           <label class="ss">
-            <input
-              type="radio"
-              value="1"
-              name="p1"
-              @click="respuesta(ans)"
-            />
+            <input type="radio" value="1" name="p1" @click="respuesta(ans)" />
             {{ ans.options }}
           </label>
         </span>
@@ -97,20 +92,6 @@ export default {
 
   mounted() {
     this.index();
-
-    // function respuesta(num_pregunta, seleccionada) {
-    // opcion_elegida[num_pregunta]=seleccionada.value;
-
-    // id="blog"+num_pregunta;
-
-    // labels=document.getElementById(id).childNodes;
-    // labels["blogs"].style.backgroundColor = "white";
-    // // labels[3].style.backgroundColor = "white";
-    // // labels[3].style.backgroundColor = "white";
-
-    // seleccionada.parentNode.style.backgroundColor="#228113ab"
-
-    // }
   },
 
   created() {},
@@ -144,12 +125,11 @@ export default {
     },
 
     respuesta(a) {
-        if(a.answer == 1) {
-          alert('BIEN!!!')
-        } else
-        {
-          alert('Mucho Arley')
-        }
+      if (a.answer == 1) {
+        alert("BIEN!!!");
+      } else {
+        alert("Mucho Arley");
+      }
     },
 
     async store() {
