@@ -152,8 +152,7 @@ nav{
 }
 
 #slash:hover{
-  animation: scale2 1s  ease;
-
+  /* animation: scale2 1s  ease; */
   
 
 }
@@ -299,7 +298,7 @@ article {
 }
 article:hover {
   background: rgba(3, 172, 3, 0.745);
-  animation: scale 1s  ease;
+  /* animation: scale 1s  ease; */
 
   scroll-behavior: smooth;
 }

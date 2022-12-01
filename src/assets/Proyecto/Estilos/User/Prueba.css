@@ -59,6 +59,7 @@ ul{
 
 .ss:hover{
     background: #1c1381ab ;
+
     cursor: pointer;
     color: white;   
     border-radius: 2rem;
