@@ -86,6 +86,15 @@
   src: url(/src\assets\Proyecto\fuentes\logos4.ttf);
 }
 
+@font-face{
+  font-family: titulo;
+  src: url(/src\assets\Proyecto\fuentes\TitanOne-Regular.ttf)
+}
+@font-face{
+  font-family: name;
+  src: url(/src\assets\Proyecto\fuentes\Rochester-Regular.ttf)
+}
+
 .container-body{
   border: 0px solid rgb(252, 15, 15);
   margin: 0%;

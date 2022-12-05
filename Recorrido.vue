@@ -25,7 +25,7 @@ export default {
     pannellum.viewer("panoramica", {
       
       // autoLoad: true,
-      // panorama:"src/assets/Proyecto/RECORRIDO/images/IMG_20221112_104246_00_004.jpg",
+      // panorama:"src/assets/Proyecto/RECORRIDOsrc/assets/Proyecto/RECORRIDO/images/IMG_20221112_104246_00_004.jpg",
       preview:"src/assets/Proyecto/Imagenes/imagen1.jpg",
       autoRotate: -4,
       showControls: false,
@@ -108,7 +108,7 @@ export default {
           minHfov: 100, //zoom maximo
           yaw: 150, //Grados izquierda o derecha
           type: "equirectangular",
-          panorama: "/images/IMG_20221112_135935_00_merged.jpg",
+          panorama: "src/assets/Proyecto/RECORRIDO/images/IMG_20221112_135935_00_merged.jpg",
           hotSpots: [
             {
               pitch: -8,
@@ -149,7 +149,7 @@ export default {
           minHfov: 100, //zoom maximo
           yaw: 150, //Grados izquierda o derecha
           type: "equirectangular",
-          panorama: "/images/IMG_20221112_110600_00_merged.jpg",
+          panorama: "src/assets/Proyecto/RECORRIDO/images/IMG_20221112_110600_00_merged.jpg",
           hotSpots: [
             {
               pitch: -12,
@@ -201,7 +201,7 @@ export default {
           minHfov: 100, //zoom maximo
           yaw: 150, //Grados izquierda o derecha
           type: "equirectangular",
-          panorama: "/images/IMG_20221112_110821_00_merged.jpg",
+          panorama: "src/assets/Proyecto/RECORRIDO/images/IMG_20221112_110821_00_merged.jpg",
           hotSpots: [
             {
               pitch: 2,
@@ -221,7 +221,7 @@ export default {
           minHfov: 100, //zoom maximo
           yaw: 150, //Grados izquierda o derecha
           type: "equirectangular",
-          panorama: "/images/IMG_20221112_110926_00_merged.jpg",
+          panorama: "src/assets/Proyecto/RECORRIDO/images/IMG_20221112_110926_00_merged.jpg",
           hotSpots: [
             {
               // Ir  Adelante
@@ -260,7 +260,7 @@ export default {
           minHfov: 100, //zoom maximo
           yaw: 150, //Grados izquierda o derecha
           type: "equirectangular",
-          panorama: "/images/IMG_20221112_111039_00_merged.jpg",
+          panorama: "src/assets/Proyecto/RECORRIDO/images/IMG_20221112_111039_00_merged.jpg",
           hotSpots: [
             {
               // Ir ATRAS
@@ -293,7 +293,7 @@ export default {
           minHfov: 100, //zoom maximo
           yaw: 150, //Grados izquierda o derecha
           type: "equirectangular",
-          panorama: "/images/IMG_20221112_111136_00_merged.jpg",
+          panorama: "src/assets/Proyecto/RECORRIDO/images/IMG_20221112_111136_00_merged.jpg",
           hotSpots: [
             {
               // Ir ATRAS
@@ -326,7 +326,7 @@ export default {
           minHfov: 100, //zoom maximo
           yaw: 150, //Grados izquierda o derecha
           type: "equirectangular",
-          panorama: "/images/IMG_20221112_111428_00_merged.jpg",
+          panorama: "src/assets/Proyecto/RECORRIDO/images/IMG_20221112_111428_00_merged.jpg",
           hotSpots: [
             {
               // Ir ATRAS
@@ -359,7 +359,7 @@ export default {
           minHfov: 100, //zoom maximo
           yaw: 150, //Grados izquierda o derecha
           type: "equirectangular",
-          panorama: "/images/IMG_20221112_135500_00_merged.jpg",
+          panorama: "src/assets/Proyecto/RECORRIDO/images/IMG_20221112_135500_00_merged.jpg",
           hotSpots: [
             {
               // Ir ADELANTE
@@ -400,7 +400,7 @@ export default {
           minHfov: 100, //zoom maximo
           yaw: 150, //Grados izquierda o derecha
           type: "equirectangular",
-          panorama: "/images/IMG_20221112_111621_00_merged.jpg",
+          panorama: "src/assets/Proyecto/RECORRIDO/images/IMG_20221112_111621_00_merged.jpg",
           hotSpots: [
             {
               // Ir ATRAS
@@ -445,7 +445,7 @@ export default {
           minHfov: 100, //zoom maximo
           yaw: 150, //Grados izquierda o derecha
           type: "equirectangular",
-          panorama: "/images/IMG_20221112_112156_00_merged.jpg",
+          panorama: "src/assets/Proyecto/RECORRIDO/images/IMG_20221112_112156_00_merged.jpg",
           hotSpots: [
             {
               // Ir ADELANTE
@@ -466,7 +466,7 @@ export default {
           minHfov: 100, //zoom maximo
           yaw: 150, //Grados izquierda o derecha
           type: "equirectangular",
-          panorama: "/images/IMG_20221112_112340_00_merged.jpg",
+          panorama: "src/assets/Proyecto/RECORRIDO/images/IMG_20221112_112340_00_merged.jpg",
           hotSpots: [
             {
               // Ir ATRAS
@@ -510,7 +510,7 @@ export default {
           minHfov: 100, //zoom maximo
           yaw: 150, //Grados izquierda o derecha
           type: "equirectangular",
-          panorama: "/images/IMG_20221112_112504_00_merged.jpg",
+          panorama: "src/assets/Proyecto/RECORRIDO/images/IMG_20221112_112504_00_merged.jpg",
           hotSpots: [
             {
               // Ir ATRAS
@@ -543,7 +543,7 @@ export default {
           minHfov: 100, //zoom maximo
           yaw: 150, //Grados izquierda o derecha
           type: "equirectangular",
-          panorama: "/images/IMG_20221112_112546_00_merged.jpg",
+          panorama: "src/assets/Proyecto/RECORRIDO/images/IMG_20221112_112546_00_merged.jpg",
           hotSpots: [
             {
               // Ir ATRAS
@@ -576,7 +576,7 @@ export default {
           minHfov: 100, //zoom maximo
           yaw: 150, //Grados izquierda o derecha
           type: "equirectangular",
-          panorama: "/images/IMG_20221112_112712_00_merged.jpg",
+          panorama: "src/assets/Proyecto/RECORRIDO/images/IMG_20221112_112712_00_merged.jpg",
           hotSpots: [
             {
               // Ir ATRAS
@@ -621,7 +621,7 @@ export default {
           minHfov: 100, //zoom maximo
           yaw: 150, //Grados izquierda o derecha
           type: "equirectangular",
-          panorama: "/images/IMG_20221112_112846_00_merged.jpg",
+          panorama: "src/assets/Proyecto/RECORRIDO/images/IMG_20221112_112846_00_merged.jpg",
           hotSpots: [
             {
               // Ir ATRAS
@@ -667,7 +667,7 @@ export default {
           minHfov: 100, //zoom maximo
           yaw: 150, //Grados izquierda o derecha
           type: "equirectangular",
-          panorama: "/images/IMG_20221112_121148_00_merged.jpg",
+          panorama: "src/assets/Proyecto/RECORRIDO/images/IMG_20221112_121148_00_merged.jpg",
           hotSpots: [
             {
               // Ir ATRAS
@@ -700,7 +700,7 @@ export default {
           minHfov: 100, //zoom maximo
           yaw: 150, //Grados izquierda o derecha
           type: "equirectangular",
-          panorama: "/images/IMG_20221112_114750_00_merged.jpg",
+          panorama: "src/assets/Proyecto/RECORRIDO/images/IMG_20221112_114750_00_merged.jpg",
           hotSpots: [
             {
               // Ir ATRAS
@@ -745,7 +745,7 @@ export default {
           minHfov: 100, //zoom maximo
           yaw: 150, //Grados izquierda o derecha
           type: "equirectangular",
-          panorama: "/images/IMG_20221112_113131_00_merged.jpg",
+          panorama: "src/assets/Proyecto/RECORRIDO/images/IMG_20221112_113131_00_merged.jpg",
           hotSpots: [
             {
               // Ir ATRAS
@@ -766,7 +766,7 @@ export default {
           minHfov: 100, //zoom maximo
           yaw: 150, //Grados izquierda o derecha
           type: "equirectangular",
-          panorama: "/images/IMG_20221112_113333_00_merged.jpg",
+          panorama: "src/assets/Proyecto/RECORRIDO/images/IMG_20221112_113333_00_merged.jpg",
           hotSpots: [
             {
               // Ir ATRAS
@@ -812,7 +812,7 @@ export default {
           minHfov: 100, //zoom maximo
           yaw: 150, //Grados izquierda o derecha
           type: "equirectangular",
-          panorama: "/images/IMG_20221112_114633_00_merged.jpg",
+          panorama: "src/assets/Proyecto/RECORRIDO/images/IMG_20221112_114633_00_merged.jpg",
           hotSpots: [
             {
               // Ir ATRAS
@@ -834,7 +834,7 @@ export default {
           minHfov: 100, //zoom maximo
           yaw: 150, //Grados izquierda o derecha
           type: "equirectangular",
-          panorama: "/images/IMG_20221112_113452_00_merged.jpg",
+          panorama: "src/assets/Proyecto/RECORRIDO/images/IMG_20221112_113452_00_merged.jpg",
           hotSpots: [
             {
               // Ir ATRAS
@@ -904,7 +904,7 @@ export default {
           minHfov: 100, //zoom maximo
           yaw: 150, //Grados izquierda o derecha
           type: "equirectangular",
-          panorama: "/images/IMG_20221112_115435_00_merged.jpg",
+          panorama: "src/assets/Proyecto/RECORRIDO/images/IMG_20221112_115435_00_merged.jpg",
           hotSpots: [
             {
               // Ir ATRAS
@@ -938,7 +938,7 @@ export default {
           minHfov: 100, //zoom maximo
           yaw: 150, //Grados izquierda o derecha
           type: "equirectangular",
-          panorama: "/images/IMG_20221112_115626_00_merged.jpg",
+          panorama: "src/assets/Proyecto/RECORRIDO/images/IMG_20221112_115626_00_merged.jpg",
           hotSpots: [
             {
               // Ir ATRAS
@@ -971,7 +971,7 @@ export default {
           minHfov: 100, //zoom maximo
           yaw: 150, //Grados izquierda o derecha
           type: "equirectangular",
-          panorama: "/images/IMG_20221112_113616_00_merged.jpg",
+          panorama: "src/assets/Proyecto/RECORRIDO/images/IMG_20221112_113616_00_merged.jpg",
           hotSpots: [
             {
               // Ir ADELANTE
@@ -1017,7 +1017,7 @@ export default {
           minHfov: 100, //zoom maximo
           yaw: 150, //Grados izquierda o derecha
           type: "equirectangular",
-          panorama: "/images/IMG_20221112_115100_00_merged.jpg",
+          panorama: "src/assets/Proyecto/RECORRIDO/images/IMG_20221112_115100_00_merged.jpg",
           hotSpots: [
             {
               // Ir ATRAS
@@ -1038,7 +1038,7 @@ export default {
           minHfov: 100, //zoom maximo
           yaw: 150, //Grados izquierda o derecha
           type: "equirectangular",
-          panorama: "/images/IMG_20221112_115209_00_merged.jpg",
+          panorama: "src/assets/Proyecto/RECORRIDO/images/IMG_20221112_115209_00_merged.jpg",
           hotSpots: [
             {
               // Ir ADELANTE
@@ -1084,7 +1084,7 @@ export default {
           minHfov: 100, //zoom maximo
           yaw: 150, //Grados izquierda o derecha
           type: "equirectangular",
-          panorama: "/images/IMG_20221112_115240_00_merged.jpg",
+          panorama: "src/assets/Proyecto/RECORRIDO/images/IMG_20221112_115240_00_merged.jpg",
           hotSpots: [
             {
               // Ir ATRAS
@@ -1106,7 +1106,7 @@ export default {
           minHfov: 100, //zoom maximo
           yaw: 150, //Grados izquierda o derecha
           type: "equirectangular",
-          panorama: "/images/IMG_20221112_142303_00_merged.jpg",
+          panorama: "src/assets/Proyecto/RECORRIDO/images/IMG_20221112_142303_00_merged.jpg",
           hotSpots: [
             {
               // ESQUINA DE TORRE DE ALTURA
@@ -1140,7 +1140,7 @@ export default {
           minHfov: 100, //zoom maximo
           yaw: 150, //Grados izquierda o derecha
           type: "equirectangular",
-          panorama: "/images/IMG_20221112_134609_00_merged.jpg",
+          panorama: "src/assets/Proyecto/RECORRIDO/images/IMG_20221112_134609_00_merged.jpg",
           hotSpots: [
             {
               // Ir ADELANTE
@@ -1174,7 +1174,7 @@ export default {
           minHfov: 100, //zoom maximo
           yaw: 150, //Grados izquierda o derecha
           type: "equirectangular",
-          panorama: "/images/IMG_20221112_134801_00_merged.jpg",
+          panorama: "src/assets/Proyecto/RECORRIDO/images/IMG_20221112_134801_00_merged.jpg",
           hotSpots: [
             {
               // Ir ATRAS
@@ -1220,7 +1220,7 @@ export default {
           minHfov: 100, //zoom maximo
           yaw: 150, //Grados izquierda o derecha
           type: "equirectangular",
-          panorama: "/images/IMG_20221112_134838_00_merged.jpg",
+          panorama: "src/assets/Proyecto/RECORRIDO/images/IMG_20221112_134838_00_merged.jpg",
           hotSpots: [
             {
               // Ir ATRAS
@@ -1242,7 +1242,7 @@ export default {
           minHfov: 100, //zoom maximo
           yaw: 150, //Grados izquierda o derecha
           type: "equirectangular",
-          panorama: "/images/IMG_20221112_134435_00_merged.jpg",
+          panorama: "src/assets/Proyecto/RECORRIDO/images/IMG_20221112_134435_00_merged.jpg",
           hotSpots: [
             {
               // Ir ATRAS
@@ -1300,7 +1300,7 @@ export default {
           minHfov: 100, //zoom maximo
           yaw: 150, //Grados izquierda o derecha
           type: "equirectangular",
-          panorama: "/images/IMG_20221112_142551_00_merged.jpg",
+          panorama: "src/assets/Proyecto/RECORRIDO/images/IMG_20221112_142551_00_merged.jpg",
           hotSpots: [
             {
               // Ir ATRAS
@@ -1322,7 +1322,7 @@ export default {
           minHfov: 100, //zoom maximo
           yaw: 150, //Grados izquierda o derecha
           type: "equirectangular",
-          panorama: "/images/IMG_20221112_135056_00_merged.jpg",
+          panorama: "src/assets/Proyecto/RECORRIDO/images/IMG_20221112_135056_00_merged.jpg",
           hotSpots: [
             {
               // Ir ADELANTE
@@ -1379,7 +1379,7 @@ export default {
           minHfov: 100, //zoom maximo
           yaw: 150, //Grados izquierda o derecha
           type: "equirectangular",
-          panorama: "/images/IMG_20221112_135001_00_merged.jpg",
+          panorama: "src/assets/Proyecto/RECORRIDO/images/IMG_20221112_135001_00_merged.jpg",
           hotSpots: [
             {
               // Ir ATRAS
@@ -1412,7 +1412,7 @@ export default {
           minHfov: 100, //zoom maximo
           yaw: 150, //Grados izquierda o derecha
           type: "equirectangular",
-          panorama: "/images/IMG_20221112_142659_00_merged.jpg",
+          panorama: "src/assets/Proyecto/RECORRIDO/images/IMG_20221112_142659_00_merged.jpg",
           hotSpots: [
             {
               // Ir ATRAS
@@ -1436,7 +1436,7 @@ export default {
           minHfov: 100, //zoom maximo
           yaw: 150, //Grados izquierda o derecha
           type: "equirectangular",
-          panorama: "/images/IMG_20221112_111701_00_merged.jpg",
+          panorama: "src/assets/Proyecto/RECORRIDO/images/IMG_20221112_111701_00_merged.jpg",
           hotSpots: [
             {
               // IR A LA ENTRADA-10
@@ -1494,7 +1494,7 @@ export default {
           minHfov: 100, //zoom maximo
           yaw: 150, //Grados izquierda o derecha
           type: "equirectangular",
-          panorama: "/images/IMG_20221112_135251_00_merged.jpg",
+          panorama: "src/assets/Proyecto/RECORRIDO/images/IMG_20221112_135251_00_merged.jpg",
           hotSpots: [
             {
               // Ir ATRAS
@@ -1517,7 +1517,7 @@ export default {
           minHfov: 100, //zoom maximo
           yaw: 150, //Grados izquierda o derecha
           type: "equirectangular",
-          panorama: "/images/IMG_20221112_135551_00_merged.jpg",
+          panorama: "src/assets/Proyecto/RECORRIDO/images/IMG_20221112_135551_00_merged.jpg",
           hotSpots: [
             {
               // Ir  ATRAS BIENESTAR
@@ -1564,7 +1564,7 @@ export default {
           minHfov: 100, //zoom maximo
           yaw: 150, //Grados izquierda o derecha
           type: "equirectangular",
-          panorama: "/images/IMG_20221112_135350_00_merged.jpg",
+          panorama: "src/assets/Proyecto/RECORRIDO/images/IMG_20221112_135350_00_merged.jpg",
           hotSpots: [
             {
               // Ir ATRAS
@@ -1587,7 +1587,7 @@ export default {
           minHfov: 100, //zoom maximo
           yaw: 150, //Grados izquierda o derecha
           type: "equirectangular",
-          panorama: "/images/IMG_20221112_135646_00_merged.jpg",
+          panorama: "src/assets/Proyecto/RECORRIDO/images/IMG_20221112_135646_00_merged.jpg",
           hotSpots: [
             {
               // Ir ATRAS
@@ -1614,7 +1614,7 @@ export default {
           minHfov: 100, //zoom maximo
           yaw: 150, //Grados izquierda o derecha
           type: "equirectangular",
-          panorama: "/images/IMG_20221112_115709_00_merged.jpg",
+          panorama: "src/assets/Proyecto/RECORRIDO/images/IMG_20221112_115709_00_merged.jpg",
           hotSpots: [
             {
               // Ir ATRAS
@@ -1660,7 +1660,7 @@ export default {
           minHfov: 100, //zoom maximo
           yaw: 150, //Grados izquierda o derecha
           type: "equirectangular",
-          panorama: "/images/ron.jpg",
+          panorama: "src/assets/Proyecto/RECORRIDO/images/ron.jpg",
           hotSpots: [
             {
               // Ir ATRAS

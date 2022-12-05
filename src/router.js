@@ -24,7 +24,7 @@ import ForgotPassword from "./components/User/ForgotPassword.vue";
 import ResetPassword from "./components/User/ResetPassword.vue";
 import NavBarUser from "./components/User/NavBarUser.vue";
 import AsideUser from "./components/User/AsideUser.vue";
-import SettingUser from "./components/User/SettingUser.vue";
+import Certificado from "./components/User/Certificado.vue";
 
 /////////////ADMINISTRADOR//////////////
 import Admin from "./components/Admin/Admin.vue";
@@ -46,25 +46,13 @@ import Recorrido from "/Recorrido.vue";
 
 const routes = [
   /////////////DEFAULT//////////////
-  {
-    path: "/Recorrido",
-    name: "Recorrido",
-    components: {
-      default: Recorrido,
-      // NavBar: NavBar,
-    },
-  },
-
-
-
 
   {
     path: "/",
     name: "Home",
-    component: 
+    component:
       // NavBar: NavBar,
       Home,
-    
   },
 
   {
@@ -100,12 +88,22 @@ const routes = [
   },
   /////////////RECORRIDO//////////////
 
+  {
+    path: "/Recorrido",
+    name: "Recorrido",
+    components: {
+      default: Recorrido,
+      // NavBar: NavBar,
+    },
+  },
+
+  /////////////CERTIFICADO//////////////
+
   // {
-  //   path: "/Recorrido",
-  //   name: "Recorrido",
+  //   path: "/Certificado",
+  //   name: "Certificado",
   //   components: {
-  //     default: Recorrido,
-  //     // NavBar: NavBar,
+  //     default: Certificado,
   //   },
   // },
 
@@ -140,13 +138,11 @@ const routes = [
         components: {
           default: Document,
         },
+      },
 
-        children: [
-          {
-            path: "Setting",
-            component: SettingUser,
-          },
-        ],
+      {
+        path: "certificado",
+        component: Certificado,
       },
     ],
   },
