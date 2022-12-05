@@ -79,7 +79,7 @@ export default {
       list_questions: [],
 
       ////
-      list_answer: [],
+      list_answer: [], 
 
       ///
       edit_questions: {},
