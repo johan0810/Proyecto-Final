@@ -1,70 +1,47 @@
 <template>
-  <div
-    class="container-body"
-    data-offset="80"
-    data-spy="scroll"
-    data-target="#navegación"
-  >
-    <nav aria-label="Page navigation example">
-      <ul class="pagination">
-        <li class="page-item"><a class="page-link" @click="next()">Next</a></li>
-        <li class="page-item"><a class="page-link" @click="prev()">prev</a></li>
-
-      </ul>
-    </nav>
-
-    <!-- SECCION 0 -->
-
-    <div class="badge">
-      <div class="text">
-        <h1
-          style="
-            color: blue;
-            font-family: tipo_letra9;
-            font-size: 5rem;
-            margin: 0;
-          "
-        >
-          PRUEGUNTAS
-        </h1>
+  <div class="container-body">
+    <div id="TEST">
+      <div class="badge">
+        <div class="text">
+          <h1 class="titulo">PRUEGUNTAS</h1>
+        </div>
       </div>
-    </div>
-    <!-- <div
+      <!-- <div
       class="container-fluid"
       id="seccion1"
       v-for="(questions, i) in list_questions"
       :key="'pregunta' + i"
     > -->
-    <div class="container-fluid" id="seccion1">
-      <!-- <div class=""  v-bind:id="'seccion'+i" > -->
-
       <div id="blog">
         <div class="pregunta">
           <h1>{{ cont }}- {{ q.question }}</h1>
         </div>
-
         <span
           class="text-black font-weight-light efecto e-izquierda d400 titulo2"
           v-for="(ans, i) in q.answers"
           :key="'ans' + i"
         >
-          <label class="ss" >
+          <label class="ss">
             <input type="radio" value="1" name="p1" @click="respuesta(ans)" />
             {{ ans.options }}
           </label>
         </span>
       </div>
-    </div>
-    <div class="footer">
-      <div class="botton">
-        <button class="btn btn-danger">FINALIZAR</button>
-      </div>
-      <div class="result">
-        <h1>Acertadas:</h1>
-        <span id="resultado">{{acertadas}}</span>
-        <span id="resultado">{{this.list_questions.length}}</span>
 
+      <div class="footer">
+        <div class="botton">
+          <button class="btn btn-danger">FINALIZAR</button>
+        </div>
+        <div class="result">
+          <h1>Acertadas:</h1>
+          <span id="resultado">{{ acertadas }}</span>
+          <span id="resultado">{{ this.list_questions.length }}</span>
+        </div>
       </div>
+      <ul class="pagination">
+        <li class="page-item"><a class="page-link" @click="prev()">prev</a></li>
+        <li class="page-item"><a class="page-link" @click="next()">Next</a></li>
+      </ul>
     </div>
   </div>
 </template>
@@ -78,18 +55,17 @@ export default {
   data() {
     return {
       q: {},
-      cont: 0,
+      cont: 1,
       selected_question: null,
       list_questions: [],
 
       ////
-      list_answer: [], 
+      list_answer: [],
 
       ///
       edit_questions: {},
       copy_edit_questions: {},
-      acertadas:0,
-      
+      acertadas: 0,
     };
   },
   //  correctas=[],
@@ -112,7 +88,6 @@ export default {
       });
       this.list_questions = respons.data.questions;
 
-    this.cont=1;
       //Primera pregunta
       this.q = this.list_questions[0];
 
@@ -127,49 +102,47 @@ export default {
       if (this.cont < this.list_questions.length) {
         this.q = this.list_questions[this.cont];
         this.cont++;
-      } else alert(this.list_questions.length);
+      } else {
+        this.cont--;
+        this.q = this.list_questions[this.cont];
+      }
     },
-    // prev() {
-    //   if (this.cont > 0) {
-    //     this.q = this.list_questions[this.cont];
-    //     this.cont--;
-    //   } else ;
-    // },
+    prev() {
+      if (this.cont) {
+        this.q = this.list_questions[this.cont];
+        this.cont--;
+      }
+    },
 
     respuesta(a) {
-
-       if (this.cont < this.list_questions.length) {
+      if (this.cont < this.list_questions.length) {
         this.q = this.list_questions[this.cont];
         this.cont++;
       } else alert("terminaste");
 
-
       if (a.answer == 1) {
         // alert("BIEN!!!");
-        this.acertadas++
+        this.acertadas++;
         // console.log(
         // this.acertadas
         // )
       } else {
         // alert("Mucho Arley");
-        
       }
 
-       if (this.acertadas==this.list_questions.length) {
-        alert('GANASTE')
+      if (this.acertadas == this.list_questions.length) {
+        alert("GANASTE");
       }
 
-      if(this.acertadas<10){
+      // if(this.acertadas<10){
 
-        alert('PERDISTE')
+      //   alert('PERDISTE')
 
-      }
-    // if(this.acertadas<3){
-    //     alert('PERDISTE')
+      // }
+      // if(this.acertadas<3){
+      //     alert('PERDISTE')
 
-    // }
-
-      
+      // }
     },
 
     async store() {
