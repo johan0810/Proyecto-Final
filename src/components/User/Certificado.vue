@@ -10,29 +10,32 @@
         <h3>EL SENA LE OTORGA LA CERTIFICACIÓN AL APRENDIZ :</h3>
       </div>
       <div class="nombre">
-        <h1>Julian Andres Cuellar Salazar</h1>
+        <h1>{{user.name}}</h1>
       </div>
       <hr />
       <div class="motivo">
         <h5>
           Por completar el recorrido virtual de las instalaciones del
           <br />
-          Centro Tecnologico De La Amazonia y acertar correctamente el test de conocimiento.
-          
+          Centro Tecnologico De La Amazonia y acertar correctamente el test de
+          conocimiento
         </h5>
       </div>
-      <hr id="firma1" /><div class="firma"></div>
+      <div type="button" value="Imprimir" class="imprimir" @click="win()"></div>
+
+      <hr id="firma1" />
+      <div class="firma"></div>
       <hr id="firma2" />
+
       <div class="instructor1">
         <div class="encargado1">
           <h5>MIGUEL MARLES</h5>
-          
         </div>
       </div>
       <div class="instructor2">
-          <div class="encargado2">
-            <h5>DANNY LOPEZ SEGURA</h5>
-         </div>
+        <div class="encargado2">
+          <h5>DANNY LOPEZ SEGURA</h5>
+        </div>
       </div>
     </div>
   </div>
@@ -49,6 +52,17 @@
     font-family: name;
     src: url("Rochester-Regular.ttf")
 } */
+
+.imprimir {
+  position: absolute;
+  border: 0px solid red;
+  bottom: 0%;
+  background-image: url(/src/assets/Proyecto/iconos/29.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 6%;
+  height: 15%;
+}
 .container-body {
   /* width: 1200px;
     height: 900px; */
@@ -69,7 +83,6 @@ hr {
 #firma1 {
   top: 80%;
   width: 10%;
-
   left: 25%;
 }
 #firma2 {
@@ -81,7 +94,7 @@ hr {
 .firma {
   top: 75%;
   left: 27%;
-  width: 7%;
+  width: 10%;
   height: 6%;
   display: flex;
   position: absolute;
@@ -89,6 +102,8 @@ hr {
   background-image: url(/src\assets\Proyecto\Logo\firma.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+  border:0px solid rebeccapurple;
+
 }
 
 .certificado-img {
@@ -119,7 +134,6 @@ hr {
 
   /* For IE8 and earlier */
 }
-
 
 .certificado {
   overflow: hidden;
@@ -152,7 +166,6 @@ hr {
   position: absolute;
   top: 25%;
   text-transform: uppercase;
-
 }
 .nombre h1 {
   font-size: 5rem;
@@ -173,7 +186,6 @@ hr {
   border: 0px solid red;
   text-align: center;
   text-transform: uppercase;
-  
 }
 
 .encargado1 {
@@ -196,4 +208,62 @@ hr {
 img {
   border: 0px solid blue;
 }
+
+@media print {
+  .imprimir {
+    display: none !important;
+  }
+}
 </style>
+
+<script>
+export default {
+  data() {
+    return {
+      user: {},
+    };
+  },
+
+  mounted() {
+    // this.$router.push("/user/inicio");
+
+    if (localStorage.token) {
+      this.token = localStorage.token;
+      this.user = JSON.parse(localStorage.user);
+
+      this.get_user();
+    } else {
+      this.$router.push({
+        name: "Login",
+        params: {
+          message: "¡Inicia sesión nuevamente!",
+        },
+      });
+    }
+  },
+
+  methods: {
+     async get_user() {
+      try {
+        console.log(this.token);
+
+        const rs = await this.axios.get("/api/user", {
+          headers: { Authorization: `Bearer ${this.token}` },
+        });
+        this.user = rs.data.user;
+      } catch (e) {
+        this.$router.push({
+          name: "Home",
+          params: {
+            message: "no estas autorizado",
+          },
+        });
+      }
+    },
+
+    win() {
+      window.print();
+    },
+  },
+};
+</script>

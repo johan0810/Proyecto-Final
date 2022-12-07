@@ -8,6 +8,8 @@
     <nav aria-label="Page navigation example">
       <ul class="pagination">
         <li class="page-item"><a class="page-link" @click="next()">Next</a></li>
+        <li class="page-item"><a class="page-link" @click="prev()">prev</a></li>
+
       </ul>
     </nav>
 
@@ -46,7 +48,7 @@
           v-for="(ans, i) in q.answers"
           :key="'ans' + i"
         >
-          <label class="ss">
+          <label class="ss" >
             <input type="radio" value="1" name="p1" @click="respuesta(ans)" />
             {{ ans.options }}
           </label>
@@ -59,7 +61,9 @@
       </div>
       <div class="result">
         <h1>Acertadas:</h1>
-        <span id="resultado"> </span>
+        <span id="resultado">{{acertadas}}</span>
+        <span id="resultado">{{this.list_questions.length}}</span>
+
       </div>
     </div>
   </div>
@@ -84,6 +88,8 @@ export default {
       ///
       edit_questions: {},
       copy_edit_questions: {},
+      acertadas:0,
+      
     };
   },
   //  correctas=[],
@@ -106,9 +112,9 @@ export default {
       });
       this.list_questions = respons.data.questions;
 
+    this.cont=1;
       //Primera pregunta
       this.q = this.list_questions[0];
-      this.cont = 1;
 
       console.log(this.list_questions);
     },
@@ -121,15 +127,49 @@ export default {
       if (this.cont < this.list_questions.length) {
         this.q = this.list_questions[this.cont];
         this.cont++;
-      } else alert("terminaste");
+      } else alert(this.list_questions.length);
     },
+    // prev() {
+    //   if (this.cont > 0) {
+    //     this.q = this.list_questions[this.cont];
+    //     this.cont--;
+    //   } else ;
+    // },
 
     respuesta(a) {
+
+       if (this.cont < this.list_questions.length) {
+        this.q = this.list_questions[this.cont];
+        this.cont++;
+      } else alert("terminaste");
+
+
       if (a.answer == 1) {
-        alert("BIEN!!!");
+        // alert("BIEN!!!");
+        this.acertadas++
+        // console.log(
+        // this.acertadas
+        // )
       } else {
-        alert("Mucho Arley");
+        // alert("Mucho Arley");
+        
       }
+
+       if (this.acertadas==this.list_questions.length) {
+        alert('GANASTE')
+      }
+
+      if(this.acertadas<10){
+
+        alert('PERDISTE')
+
+      }
+    // if(this.acertadas<3){
+    //     alert('PERDISTE')
+
+    // }
+
+      
     },
 
     async store() {
