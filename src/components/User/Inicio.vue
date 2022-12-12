@@ -26,11 +26,18 @@
 
           </router-link>
 
-          <router-link class="contenido link" to=/certificado>
-            <div class="card3">
-            </div>
-            <div>CERTIFICADO</div>
-          </router-link>
+            <router-link class="contenido link" to=/certificado   v-if="(user.approved==1)">
+              <div class="card3">
+                </div>
+             <div>CERTIFICADO</div>
+            </router-link>
+
+            <div class="contenido link" v-else>
+              <div class="card3">
+                </div>
+             <div>CERTIFICADO</div>
+              </div>
+          
         </div>
         <div class="seccion2">
           <router-link class="contenido link" to=/prueba>
