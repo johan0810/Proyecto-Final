@@ -1,10 +1,10 @@
 <template>
-  <video
+  <!-- <video
       src="/src\assets\Proyecto\Videos\pexels-rostislav-uzunov-10613973.mp4"
       autoplay="true"
       muted="true"
       loop="true" poster=""
-    ></video>
+    ></video> -->
       
   <div class="container-body" >
     <NavBarUser></NavBarUser>
