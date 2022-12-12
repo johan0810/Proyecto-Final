@@ -1,39 +1,132 @@
-.seccion {
-  display: flex;
-  flex-flow: row;
-  justify-content: center;
-  border: 0px solid rebeccapurple;
-  scroll-behavior:smooth;
-
-}
-
-/* #secciones{
-
-  display: flex;
-  border-radius: 4rem;
-  border: 5px solid black;
-  width: 20rem;
-  height: 20rem;
-  margin: 5rem;
-  background-color: rgb(148, 3, 170);
-  justify-content: center;
-  align-items: center;
-} */
-
 .containerr {
   display: flex;
   flex-flow: column;
-  border: 0px solid red ;
+  border: 0px solid rgb(0, 0, 255);
   align-items: center;
   font-family: tipo_letra3;
   font-size: 1.5rem;
   color: orange;
-  scroll-behavior:smooth;
+  scroll-behavior: smooth;
+  height: 100vh;
   /* min-height: 100vh; */
+}
+.seccion {
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  border: 0px solid rebeccapurple !important;
+  scroll-behavior: smooth;
+  min-height: 85%;
+  width: 100%;
+  /* padding: 5rem;   */
+  align-content: center;
+  align-items: center;
+}
+.seccion1 {
+  display: flex;
+  flex-wrap: wrap;
+  width: 30%;
+  height: 60vh;
+  justify-content: center;
+  border: 0px solid rebeccapurple;
+  margin: 2rem;
+  /* background: rgba(247, 190, 84, 0.653); */
+  border-radius: 1rem;
+  padding: 1rem;
+}
+.seccion2 {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  width: 40%;
+  height: max-content;
+  justify-content: center;
+  border: 0px solid rebeccapurple;
+  margin: 2rem;
+  /* background: rgba(11, 184, 11, 0.72); */
+  border-radius: 1rem;
+  padding: 1rem;
+}
+.contenido {
+  display: flex;
+  flex-flow: column;
+  width: 35%;
+  height: 13rem;
+  border: 0px solid red;
+  margin: 1rem;
 
+
+  text-decoration: none;
+  color: rgb(19, 9, 72);
+  font-family: tipo_letra9;
+  font-size: 2rem;
+  text-align: left;
+}
+.contenido:hover{
+  color:#036570;
+  /* text-decoration:underline; */
 }
 
+.card1 {
+  width: 100%;
+  height:100%;
+  border-radius: 1rem;
+  /* background-image: url(../Imagenes/img_Publicidad/anuncio3.jpg)  ; */
+  background-image: url(/src\assets\Proyecto\iconos\45.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border: 0px solid red;
+}
 
+.card2 {
+  width: 120%;
+  height: 350vh;
+  border-radius: 1rem;
+  /* background-image: url(../Imagenes/img_Publicidad/anuncio3.jpg)  ; */
+  background-image: url(/src\assets\Proyecto\iconos\43.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  border: 0px solid red;
+}
+.card3 {
+    width: 120%;
+  height: 350vh;
+  border-radius: 1rem;
+  /* background-image: url(../Imagenes/img_Publicidad/anuncio3.jpg)  ; */
+  background-image: url(/src\assets\Proyecto\iconos\46.png);
+
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+  border: 0px solid red;
+}
+
+.card4 {
+  width: 60%;
+  height: 30vh;
+  border-radius: 1rem;
+  /* background-image: url(../Imagenes/img_Publicidad/anuncio3.jpg)  ; */
+  background-image: url(/src\assets\Proyecto\iconos\47.png);
+
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+  border: 0px solid red;
+}
+
+.card5 {
+  width: 50%;
+  height: 20vh;
+  border-radius: 1rem;
+  /* background-image: url(../Imagenes/img_Publicidad/anuncio3.jpg)  ; */
+  background-image: url(/src\assets\Proyecto\iconos\49.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+  border: 0px solid red;
+}
 
 .fade-enter-from,
 .fade-leave-to {
@@ -43,158 +136,6 @@
 .fade-enter-active,
 .fade-leave-active {
   transition: opacity 0.5s ease-in-out;
-}
-
-.content1 {
-  width: 100%;
-  height: 100%;
-  border-radius: 1rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background-size: contain;
-  opacity: 0;
-  transition: 0.5s;
-  /* background-image: url(../Imagenes/gifp.gif); */
-}
-
-.content2 {
-  width: 100%;
-  height: 100%;
-  border-radius: 1rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background-size: contain;
-  opacity: 0;
-  transition: 0.5s;
-  /* background-image: url(../Imagenes/gifr.gif); */
-}
-.content3 {
-  width: 100%;
-  height: 100%;
-  border-radius: 1rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background-size: contain;
-  opacity: 0;
-  transition: 0.5s;
-  /* background-image: url(../Imagenes/gifr.gif); */
-}
-
-.card1 {
-  width: 40%;
-  height: 25vh;
-  border-radius: 1rem;
-  /* background-image: url(../Imagenes/img_Publicidad/anuncio3.jpg)  ; */
-  background-image: url(/src\assets\Proyecto\iconos\2.png);
-  background-repeat: no-repeat;
-  background-size: 100%;
-  background-position: center;
-  box-shadow: 3px 5px 5px 5px rgb(23, 189, 255);
-  margin: 1rem;
-  border: 0px solid red;
-}
-
-.card2 {
-  width: 40%;
-  height: 25vh;
-  border-radius: 1rem;
-  /* background-image: url(../Imagenes/img_Publicidad/anuncio3.jpg)  ; */
-  background-image: url(/src\assets\Proyecto\iconos\5.png);
-  background-repeat: no-repeat;
-  background-size: 100%;
-  background-position: center;
-  box-shadow: 3px 5px 5px 5px rgb(23, 189, 255);
-  margin: 1rem;
-  border: 0px solid red;
-}
-.card3 {
-  width: 40%;
-  height: 25vh;
-  border-radius: 1rem;
-  /* background-image: url(../Imagenes/img_Publicidad/anuncio3.jpg)  ; */
-  background-image: url(/src\assets\Proyecto\iconos\20.png);
-
-  background-repeat: no-repeat;
-  background-size: 100%;
-  background-position: center;
-  box-shadow: 3px 5px 5px 5px rgb(23, 189, 255);
-  margin: 1rem;
-  border: 0px solid red;
-}
-
-.content4 {
-  width: 100%;
-  height: 100%;
-  border-radius: 1rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background-size: contain;
-  opacity: 0;
-  transition: 0.5s;
-  /* background-image: url(../Imagenes/gifp.gif); */
-}
-
-.content5 {
-  width: 100%;
-  height: 100%;
-  border-radius: 1rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background-size: contain;
-  opacity: 0;
-  transition: 0.5s;
-  /* background-image: url(../Imagenes/gifr.gif); */
-}
-
-.card4 {
-  width: 40%;
-  height: 25vh;
-  border-radius: 1rem;
-  /* background-image: url(../Imagenes/img_Publicidad/anuncio3.jpg)  ; */
-  background-image: url(/src\assets\Proyecto\iconos\1.png);
-
-  background-repeat: no-repeat;
-  background-size: 100%;
-  background-position: center;  
-  box-shadow: 3px 5px 5px 5px rgb(33, 32, 98);
-  margin: 1rem;
-  border: 0px solid red;
-}
-
-.card5 {
-  width: 40%;
-  height: 25vh;
-
-  border-radius: 1rem;
-  /* background-image: url(../Imagenes/img_Publicidad/anuncio3.jpg)  ; */
-  background-image: url(/src\assets\Proyecto\iconos\22.png);
-
-  background-repeat: no-repeat;
-  background-size: 100%;
-  background-position: center;
-  box-shadow: 3px 5px 5px 5px rgb(33, 32, 98);
-  margin: 1rem;
-  border: 0px solid red;
-}
-
-.link {
-  border: 0px solid red;
-  text-decoration: none;
-  color: rgb(33, 4, 176);
-  font-family: tipo_letra7;
-  font-size: 1rem;
-  text-align: center;
-  background-color: rgba(255, 255, 255, 0.806);
 }
 
 /* .content h2, a{
@@ -243,7 +184,6 @@
   transform: scale(1.2);
 }
 
-
 .card5:hover .content5 {
   opacity: 1;
   /* background-color: rgba(255, 255, 255, 0.548); */
@@ -254,7 +194,7 @@
   /* background-color: rgba(255, 255, 255, 0.548); */
   transform: scale(1.2);
 }
-.cerrar{
+.cerrar {
   display: flex;
   width: 3rem;
   height: 3rem;
@@ -269,7 +209,6 @@
   margin-right: 23%;
 }
 
-
 .container-body {
   display: flex;
   flex-flow: column;
@@ -278,23 +217,19 @@
   background-repeat: no-repeat;
   border: 0px solid rgb(64, 243, 14);
 
-  scroll-behavior:smooth;
+  scroll-behavior: smooth;
   min-height: 100vh;
   width: 100%;
-  
 }
 
-.containe-body{
-  border:00px solid yellow;
+.containe-body {
+  border: 00px solid yellow;
   min-height: 100vh;
 }
-main{
+main {
   /* border:10px solid yellow; */
-/* overflow: hidden; */
-
-
+  /* overflow: hidden; */
 }
-
 
 #dos {
   display: flex;
@@ -358,32 +293,7 @@ main{
   background-repeat: no-repeat;
 }
 
-.seccion1 {
-  display: flex;
-  flex-wrap: wrap;
-  width: 40%;
-  height: 60vh;
-  justify-content: center;
-  border: 0px solid rebeccapurple;
-  margin: 2rem;
-  /* background: rgba(247, 190, 84, 0.653); */
-  border-radius: 1rem;
-}
-.seccion2 {
-  display: flex;
-  flex-flow: column;
-  align-items: center;
-  width: 40%;
-  height: max-content;
-  justify-content: center;
-  border: 0px solid rebeccapurple;
-  margin: 2rem;
-  /* background: rgba(11, 184, 11, 0.72); */
-  border-radius: 1rem;
-}
-
-
-#nav2{
+#nav2 {
   /* display: flex;
   flex-flow: column; */
   height: 7rem;
@@ -395,30 +305,29 @@ main{
   align-content: center;
   padding: 1rem;
 }
-.foto{
+.foto {
   width: 10rem;
   height: 10rem;
   border: 5px solid #1d1b31;
-  background-image:url(/src\assets\Proyecto\Imagenes\perfil.jpg);
+  background-image: url(/src\assets\Proyecto\Imagenes\perfil.jpg);
   background-size: contain;
   background-repeat: no-repeat;
   border-radius: 2rem;
 }
-#contain1{
+#contain1 {
   background: rgba(51, 184, 229, 0.55);
   min-height: 100vh;
   display: flex;
   flex-flow: column;
-
 }
-#contain2{
+#contain2 {
   display: flex;
   flex-flow: column;
   background: white;
   min-height: 100vh;
   padding: 0%;
 }
-.profile{
+.profile {
   display: flex;
   flex-flow: column;
   width: 50%;
@@ -427,29 +336,26 @@ main{
   margin: 4rem;
 }
 
-#contai{
+#contai {
   scroll-behavior: smooth;
   border: 10px solid rgba(45, 215, 248, 0.72);
 }
 
-video{
-
+video {
   position: fixed;
   z-index: -1;
   min-height: 100%;
   min-width: 100%;
   top: 50%;
   left: 50%;
-
   transform: translateX(-50%) translateY(-50%);
 }
 
-.na{
+.na {
   border: 2px solid gold;
   width: 20rem;
   height: 10rem;
 }
-
 
 #img {
   margin-top: 0.5rem;
@@ -465,9 +371,119 @@ video{
   z-index: 111;
 }
 
-.div{
-  
+.div {
   border: 1px solid red !important;
   width: 20rem;
   height: 20rem;
+}
+
+@media (max-width: 1500px) {
+  .seccion {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    border: 0px solid rebeccapurple !important;
+    scroll-behavior: smooth;
+    /* height: 10rem; */
+    width: 100%;
+    padding: 0rem !important;
+  }
+
+  .seccion1 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 40%;
+    height: fit-content;
+    justify-content: center;
+    border: 0px solid rgb(53, 153, 51);
+    /* background: rgba(247, 190, 84, 0.653); */
+    border-radius: 1rem;
+  }
+  .seccion2 {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    width: 40%;
+    height: max-content;
+    justify-content: center;
+    border: 0px solid rgb(153, 68, 51);
+    /* background: rgba(11, 184, 11, 0.72); */
+    border-radius: 1rem;
+  }
+  .contenido {
+    display: flex;
+    flex-flow: column;
+    width: 32%;
+    height: 10rem;
+    border: 0px solid red;
+  
+    text-decoration: none;
+    color: rgb(19, 9, 72);
+    font-family: tipo_letra9;
+    font-size: 1.5rem;
+    text-align: left;
+  }
+
+  .card1 {
+    width: 80%;
+    height: 30vh;
+    border-radius: 1rem;
+    /* background-image: url(../Imagenes/img_Publicidad/anuncio3.jpg)  ; */
+    background-image: url(/src\assets\Proyecto\iconos\45.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    border: 0px solid red;
+  }
+
+  .card2 {
+    width: 80%;
+    height: 30vh;
+    border-radius: 1rem;
+    /* background-image: url(../Imagenes/img_Publicidad/anuncio3.jpg)  ; */
+    background-image: url(/src\assets\Proyecto\iconos\43.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    border: 0px solid red;
+  }
+  .card3 {
+    width: 80%;
+    height: 30vh;
+    border-radius: 1rem;
+    /* background-image: url(../Imagenes/img_Publicidad/anuncio3.jpg)  ; */
+    background-image: url(/src\assets\Proyecto\iconos\46.png);
+
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    border: 0px solid red;
+  }
+
+  .card4 {
+    width: 60%;
+    height: 30vh;
+    border-radius: 1rem;
+    /* background-image: url(../Imagenes/img_Publicidad/anuncio3.jpg)  ; */
+    background-image: url(/src\assets\Proyecto\iconos\47.png);
+
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    border: 0px solid red;
+  }
+
+  .card5 {
+    width: 50%;
+    height: 20vh;
+    border-radius: 1rem;
+    /* background-image: url(../Imagenes/img_Publicidad/anuncio3.jpg)  ; */
+    background-image: url(/src\assets\Proyecto\iconos\49.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    border: 0px solid red;
+  }
+}
+@media (max-width: 800px) {
 }

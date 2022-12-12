@@ -1,174 +1,77 @@
 <template>
-  <div class="container-body">
-    <div id="TEST">
-      <div class="badge">
-        <div class="text">
-          <h1 class="titulo">PRUEGUNTAS</h1>
-        </div>
-      </div>
-      <!-- <div
-      class="container-fluid"
-      id="seccion1"
-      v-for="(questions, i) in list_questions"
-      :key="'pregunta' + i"
-    > -->
-      <div id="blog">
-        <div class="pregunta">
-          <h1>{{ cont }}- {{ q.question }}</h1>
-        </div>
-        <span
-          class="text-black font-weight-light efecto e-izquierda d400 titulo2"
-          v-for="(ans, i) in q.answers"
-          :key="'ans' + i"
-        >
-          <label class="ss">
-            <input type="radio" value="1" name="p1" @click="respuesta(ans)" />
-            {{ ans.options }}
-          </label>
-        </span>
-      </div>
-
-      <div class="footer">
-        <div class="botton">
-          <button class="btn btn-danger">FINALIZAR</button>
-        </div>
-        <div class="result">
-          <h1>Acertadas:</h1>
-          <span id="resultado">{{ acertadas }}</span>
-          <span id="resultado">{{ this.list_questions.length }}</span>
-        </div>
-      </div>
-      <ul class="pagination">
-        <li class="page-item"><a class="page-link" @click="prev()">prev</a></li>
-        <li class="page-item"><a class="page-link" @click="next()">Next</a></li>
-      </ul>
-    </div>
+  <div class="containere-body">
+    <router-view v-slot="{ Component }">
+        <transition name="bonce-in">
+          <component :is="Component" />
+        </transition>
+      </router-view>
   </div>
 </template>
 
 <style scoped>
-@import url(/src\assets\Proyecto\Estilos\User\Prueba.css);
-</style>
 
+.bounce-enter-active {
+  animation: bounce-in 0.5s;
+}
+.bounce-leave-active {
+  animation: bounce-in 0.5s reverse;
+}
+@keyframes bounce-in {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1.25);
+  }
+  100% {
+    transform: scale(1);
+  }
+
+
+}
+</style>
 <script>
 export default {
-  data() {
-    return {
-      q: {},
-      cont: 1,
-      selected_question: null,
-      list_questions: [],
+    data(){
+        return{
+            user:{}
+        }
 
-      ////
-      list_answer: [],
-
-      ///
-      edit_questions: {},
-      copy_edit_questions: {},
-      acertadas: 0,
-    };
-  },
-  //  correctas=[],
-  //       opcion_elegida=[],
-  //       cantidad_correctas=0,
-
+        
+    },
   mounted() {
-    this.index();
-  },
+    this.$router.push("/prueba/comenzar");
 
-  created() {},
-
-  methods: {
-    async index() {
-      let response = await axios.get("http://127.0.0.1:8000/api/test");
-      this.list_questions = response.data.question;
-
-      let respons = await axios.post("http://127.0.0.1:8000/api/test/answers", {
-        questions: this.list_questions,
+    if (localStorage.token) {
+      this.token = localStorage.token;
+      this.get_user();
+    } else {
+      this.$router.push({
+        name: "Home",
+        params: {
+          message: "¡Inicia sesión nuevamente!",
+        },
       });
-      this.list_questions = respons.data.questions;
-
-      //Primera pregunta
-      this.q = this.list_questions[0];
-
-      console.log(this.list_questions);
-    },
-
-    // get_answers(questions) {
-    //   return this.list_answer.filter((ans) => ans.questions_id === questions);
-    // },
-
-    next() {
-      if (this.cont < this.list_questions.length) {
-        this.q = this.list_questions[this.cont];
-        this.cont++;
-      } else {
-        this.cont--;
-        this.q = this.list_questions[this.cont];
-      }
-    },
-    prev() {
-      if (this.cont) {
-        this.q = this.list_questions[this.cont];
-        this.cont--;
-      }
-    },
-
-    respuesta(a) {
-      if (this.cont < this.list_questions.length) {
-        this.q = this.list_questions[this.cont];
-        this.cont++;
-      } else alert("terminaste");
-
-      if (a.answer == 1) {
-        // alert("BIEN!!!");
-        this.acertadas++;
-        // console.log(
-        // this.acertadas
-        // )
-      } else {
-        // alert("Mucho Arley");
-      }
-
-      if (this.acertadas == this.list_questions.length) {
-        alert("GANASTE");
-      }
-
-      // if(this.acertadas<10){
-
-      //   alert('PERDISTE')
-
-      // }
-      // if(this.acertadas<3){
-      //     alert('PERDISTE')
-
-      // }
-    },
-
-    async store() {
-      this.new_answers.questions_id = this.selected_question;
-      console.log(this.new_answers);
-      await axios.post("http://127.0.0.1:8000/api/answers", this.new_answers);
-      (this.new_answers = {}), this.index();
-      //console.log(this.list_answer);
-    },
-
-    edit(questions) {
-      this.selected_question = questions.id;
-      this.edit_questions = questions;
-
-      Object.assign(this.copy_edit_questions, this.edit_questions);
-    },
-
-    async update() {
-      let id = this.edit_questions.id;
-      await axios.put(
-        "http://127.0.0.1:8000/api/questions/" + this.edit_questions.id,
-        this.edit_questions
-      );
-
-      this.index();
-    },
+    }
   },
+   methods: {
+    async get_user() {
+      try {
+        console.log(this.token);
+
+        const rs = await this.axios.get("/api/user", {
+          headers: { Authorization: `Bearer ${this.token}` },
+        });
+        this.user = rs.data.user;
+      } catch (e) {
+        this.$router.push({
+          name: "Home",
+          params: {
+            message: "no estas autorizado",
+          },
+        });
+      }
+    },
+   }
 };
 </script>

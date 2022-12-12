@@ -1,56 +1,49 @@
 <template>
- <!-- <video
-      src="/src\assets\Proyecto\Videos\video.mp4"
+  <video
+      src="/src\assets\Proyecto\Videos\pexels-rostislav-uzunov-10613973.mp4"
       autoplay="true"
       muted="true"
       loop="true" poster=""
-    ></video> -->
-  <div class="container-body">
+    ></video>
+      
+  <div class="container-body" >
     <NavBarUser></NavBarUser>
-   
+
     <div class="containerr" id="container">
       <div class="seccion">
         <div class="seccion1">
-          <div class="card1">
-            <div class="content1">
-              <router-link class="link" to="/user/profile">
-                <div>CONFIGURACION DE CUENTA</div>
-              </router-link>
+          <router-link class="contenido link" to=/user/profile>
+            <div class="card1">
             </div>
-          </div>
+              <div>MI CUENTA</div>
 
-          <div class="card2">
-            <div class="content2">
-              <router-link class="link" to="/user/documentacion">
-                <div>DOCUMENTACION</div>
-              </router-link>
-            </div>
-          </div>
+          </router-link>
 
-          <div class="card3">
-            <div class="content3">
-              <router-link class="link" to="/user/certificado">
-                <div>CERTIFICADO</div>
-              </router-link>
+          <router-link class="contenido link" to=/user/documentacion>
+            <div class="card2">
             </div>
-          </div>
+              <div id="titilos">DOCUMENTACION</div>
+
+          </router-link>
+
+          <router-link class="contenido link" to=/certificado>
+            <div class="card3">
+            </div>
+            <div>CERTIFICADO</div>
+          </router-link>
         </div>
         <div class="seccion2">
-          <div class="card4">
-            <div class="content4">
-              <router-link class="link" to="/user/prueba">
-                <div>HACER PRUEBA</div>
-              </router-link>
+          <router-link class="contenido link" to=/prueba>
+            <div class="card4">
             </div>
-          </div>
+            <div>HACER PRUEBA</div>
+          </router-link>
 
-          <div class="card5">
-            <div class="content5">
-              <router-link class="link" to="/recorrido">
-                <div>HACER RECORRIDO</div>
-              </router-link>
+          <router-link class="contenido link" to=/recorrido>
+            <div class="card5">
             </div>
-          </div>
+            <div>HACER RECORRIDO</div>
+          </router-link>
         </div>
       </div>
     </div>
@@ -68,6 +61,8 @@
       </div>
     </div>
   </div>
+    <router-view></router-view>
+
 </template>
     <style scoped>
 @import url(/src\assets\Proyecto\Estilos\User\Cuenta.css);

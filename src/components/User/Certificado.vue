@@ -108,8 +108,8 @@ hr {
 
 .certificado-img {
   display: flex;
-  width: 100vw;
-  height: 100vh;
+  min-width: 100vw;
+  min-height: 100vh;
   /* border: 1px solid red; */
   background-image: url(/src\assets\Proyecto\Logo\Diploma.jpg);
   background-size: cover;

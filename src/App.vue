@@ -7,14 +7,15 @@
   <!-- <router-view name="NavBar"> </router-view> -->
   <!-- <router-view name="Aside"> </router-view>  -->
 
-  <router-view name="NavBar"> </router-view>
-  <router-view name="Aside"> </router-view>
-
+    <router-view name="NavBar"> </router-view>
+    <router-view name="Aside"> </router-view>
+<div class="container-body">
   <router-view v-slot="{ Component }">
     <transition name="bounce" >
       <component :is="Component" />
     </transition>
   </router-view>
+</div>
 
    <!-- <router-view v-slot="{ Component }">
     <transition name="fade" mode="out-in">

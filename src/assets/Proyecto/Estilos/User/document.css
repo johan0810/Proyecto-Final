@@ -8,6 +8,7 @@ top: 2rem;
 .inicio{
   display: flex;
   flex-flow: column;
+  height: 100vh;
 }
 nav{
   position: sticky;
@@ -26,7 +27,7 @@ nav{
   max-width: 90%;
   align-items: center;
   min-height: 35vh;
-  border: 0px solid red;
+  border: 0px solid rgb(0, 255, 238);
   padding: 0rem;
   scroll-behavior: smooth;
   /* overflow: scroll; */
@@ -40,7 +41,7 @@ nav{
   width: 100%;
   height: 1rem;
   display:flex ;
-  background-color:rgba(3, 172, 3, 0.745) ; 
+  background-color:#1d1b31 ; 
 }
 .div {
   justify-content: center;
@@ -68,7 +69,7 @@ nav{
 }
 #slider1 {
   width: 100%;
-  height: 45vh;
+  height: 40vh;
   border: 0px solid rgb(73, 70, 70);
   border-radius: 0rem;
   /* background-image: url(../Imagenes/img_Publicidad/anuncio3.jpg)  ; */
@@ -129,7 +130,7 @@ nav{
   background-image: url(/src\assets\Proyecto\iconos\37.png);
   background-size: cover;
   background-repeat: no-repeat;
-  border: 2px solid rgb(0, 242, 255);
+  border: 0px solid rgb(0, 242, 255);
   margin-inline: 50vw;
   margin-top: 1rem;
 }
@@ -297,13 +298,13 @@ article {
 
 }
 article:hover {
-  background: rgba(3, 172, 3, 0.745);
+  background: #1d1b314b;
   /* animation: scale 1s  ease; */
 
   scroll-behavior: smooth;
 }
 article h1 {
-  color: yellowgreen;
+  color: #1d1b31;
   font-family: tipo_letra2;
 }
 article:hover #button {
@@ -312,13 +313,12 @@ article:hover #button {
 }
 
 article:hover h1 {
-  color: white;
+  /* color: white; */
 }
 .tex {
   display: flex;
   align-items: center;
   justify-content: center;
-  /* justify-items: flex-start; */
   position: absolute;
   color: black;
   z-index: 1;
@@ -327,9 +327,8 @@ article:hover h1 {
   width: 50%;
   height: 10rem;
   border-radius: 0.5rem;
-  /* filter: blur(4px); */
   font-family: tipo_letra2;
-  top: 25%;
+  top: 20%;
 }
 
 #boton-inicio{
@@ -359,6 +358,7 @@ transform: scale(1.2);
 .tex h1 {
   /* -webkit-box-shadow:inset 11px 11px 11px 11px rgba(12,12,12,12);
   box-shadow:inset 11px 11px 11px 11px rgba(12,12,12,12); */
+  
 }
 
 .logo {
@@ -385,7 +385,7 @@ transform: scale(1.2);
   height: 2rem;
   font-family: tipo_letra;
   opacity: 0;
-  background: #1d1b31;
+  background:#036570;
 }
 #button:hover {
   opacity: 1;
@@ -471,7 +471,7 @@ iframe {
 
 .titulo1 {
   font-family: tipo_letra;
-  color: rgba(3, 172, 3, 0.745);
+  color: #036570;
   text-align: center;
 }
 .titulo {
@@ -511,4 +511,85 @@ iframe {
   background-size: cover;
   margin: 3rem;
   background-image: url(/src\assets\Proyecto\Imagenes\aprendiz.png);
+}
+
+@media (max-width: 1500px) {
+  .container-body {
+    border: 0px solid rebeccapurple; 
+    /* height: 30vh; */
+  }
+  #slider1{
+    height: 35vh;
+  }
+  .container-main{
+    border: 00px solid red;
+    /* height: 20vh; */
+  }
+  .titulo1 h1{
+    border: 0px solid red;
+    font-size: 1.5rem;
+  }
+  
+  
+article {
+  display: flex;
+  flex-flow: column;
+  max-height: fit-content;
+  max-width: fit-content;
+  margin-inline: 0rem;
+  border: 0px solid rgb(34, 255, 0);
+  border-radius: 0rem;
+  border-top-left-radius: 2rem;
+  border-top-right-radius: 2rem;
+  padding: 0.5rem;
+  font-family: tipo_letra17;
+  /* font-size: 0.5rem; */
+}
+article h1{
+  font-size: 2rem;
+}
+.texto{
+  border: 0px solid red;
+  font-size: .7rem;
+  width: fit-content;
+  height: fit-content;
+}
+.logo{
+  width: 5rem;
+  height: 2rem;
+}
+.container-footer {
+  border: 00px solid rgb(30, 255, 0);
+ 
+}
+
+}
+@media (max-width: 800px) {
+.container-main{
+  border: 00px solid rgb(235, 205, 8);
+  flex-wrap: wrap;
+  overflow: scroll;
+}
+.articulos{
+  border: 0px solid rebeccapurple;
+  width: 200%;
+}
+article{
+width: 40rem;
+border: 0px solid red;
+height: 100%;
+}
+.diseño{
+  display: none;
+}
+#button{
+  opacity: 1;
+  color:#036570 !important;
+  border: 2px solid rgb(0, 26, 128);
+  background: none;
+}
+.titulo{
+  display: flex;
+}
+
 }

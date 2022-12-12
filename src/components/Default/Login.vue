@@ -1,6 +1,6 @@
 <template>
   <div class="container-body">
-    <main>
+    <div class="container-main">
       <div class="contenedor_todo">
         <div class="caja_trasera">
           <div class="caja_trasera-login">
@@ -122,7 +122,7 @@
           </div>
         </div>
       </div>
-    </main>
+    </div>
   </div>
   <!-- <div class="container-body">
 <aside>

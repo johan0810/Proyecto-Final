@@ -37,11 +37,13 @@
           <td>{{ users.email }}</td>
           <td>{{ users.dni }}</td>
           <td>{{ users.phone }}</td>
+          <td>
           <button class="btn btn-danger" id="delete">
             <span class="material-symbols-outlined" @click="destroy(users.id)"
               >delete
             </span>
           </button>
+          </td>
          
         </tr>
       </tbody>

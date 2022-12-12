@@ -1,4 +1,5 @@
 <template>
+
   <div class="container-body">
     <div class="titulo"><h1>RECORRIDO VIRTUAL SENA</h1></div>
     <div class="container-main">
@@ -61,9 +62,9 @@
   justify-content: center;
   flex-wrap: wrap;
   scroll-behavior: smooth;
-  border: 0px solid rebeccapurple;
-  min-width: 100%;
-  min-height: 100vh;
+  border: 10px solid rebeccapurple;
+    width: 100%;
+   height: 100vh;
   /* border: 10px solid black; */
 }
 

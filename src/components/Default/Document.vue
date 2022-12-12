@@ -59,7 +59,7 @@
               <a id="button" class="btn" href="#himno" role="button">Ver</a>
             </article>
             <article id="documento1">
-              <h1>Valores y Compromisos Institucionales</h1>
+              <h1>Compromisos Institucionales</h1>
               <div class="logo" id="img4"></div>
               <div class="texto">
                 Los servidores públicos del SENA, contribuyen a dar respuesta al
@@ -221,7 +221,7 @@
             <a
               type="button"
               target="_blank"
-              href="https://www.sena.edu.co/es-co/sena/Paginas/misionVision.aspx"
+              href="https://certificadossena.net/himno-sena/"
               id="boton-link"
             >
             </a>
@@ -300,7 +300,7 @@
               <a
                 type="button"
                 target="_blank"
-                href="https://www.sena.edu.co/es-co/sena/Paginas/misionVision.aspx"
+                href="https://www.sena.edu.co/es-co/sena/Paginas/valores-y-compromisos-institucionales.aspx"
                 id="boton-link"
               >
               </a>

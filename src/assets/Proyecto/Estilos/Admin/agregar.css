@@ -4,7 +4,7 @@
     flex-flow: column;
     /* height: 150rem; */
     /*ESTRUCTURA/*/
-    border: 0px solid blue;
+    border: 10px solid blue;
     flex-wrap: wrap;
     justify-content: center;
   
@@ -42,6 +42,8 @@
     border: 0px solid red;
     font-size: 2rem;
     flex-wrap: wrap;
+    background-color: rgba(51, 184, 229, 0.55);
+ 
     
  
   }
@@ -51,19 +53,23 @@
   }
  
   .seccion1{
+    display: flex;
+  flex-flow: column;
+
     width: 50%;
-    
-   
     align-self:'';
-    border: 0px solid red;
+    border: 10px solid rgb(17, 255, 0);
     padding: 2rem;
+    height: 35vh;
     
   }
 .seccion2{
+  display: flex;
+  flex-flow: column;
   width: 50%;
- 
-  border: 0px solid red;
+  border: 10px solid rgb(255, 0, 255);
   padding: 2rem;
+  height: 35vh;
 }
 
 

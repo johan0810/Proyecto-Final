@@ -16,19 +16,29 @@
         </button>
       </div>
       <div class="seccion1">
+      <div class="input-group mb-3">
         <input
           type="text"
           placeholder="EDITAR"
-          class="form-control my-3"
+          class="form-control my-3 search" aria-label="Recipient's username" aria-describedby="button-addon2"
           v-model="edit_questions.question"
         />
+         <button type="button" class="btn btn-outline-danger" id="button-addon2" @click="cancel()">
+          Cancelar
+        </button>
+      </div>
+        
+        <div class="input-group mb-3">
+  <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="button-addon2">
+  <button class="btn btn-danger" type="button" id="button-addon2">Button</button>
+</div>
         <button type="button" class="btn btn-success" @click="update()">
           Guardar
         </button>
 
-        <button type="button" class="btn btn-danger" @click="cancel()">
+        <!-- <button type="button" class="btn btn-danger" @click="cancel()">
           Cancelar
-        </button>
+        </button> -->
       </div>
     </div>
     <div class="main">

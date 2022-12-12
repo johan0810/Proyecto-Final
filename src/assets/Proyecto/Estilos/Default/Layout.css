@@ -98,15 +98,12 @@
 .container-body{
   border: 0px solid rgb(252, 15, 15);
   margin: 0%;
-  height: 90vh;
+  /* height: 100vh; */
   padding: 0%;
   box-sizing: border-box;
   scroll-behavior:smooth;
-
   /* background-image: url(../Imagenes/imagen1.jpg);
   background-size: contain; */
-
-
 }
 
 .con{
@@ -159,9 +156,3 @@
   
 } */
 
-#body2{
-  /* border: 10px solid rebeccapurple; */
-  /* overflow: hidden; */
-  scroll-behavior: smooth;
-  border: 10ox solid red;
-}

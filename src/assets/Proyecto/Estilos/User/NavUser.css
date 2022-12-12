@@ -10,6 +10,7 @@
   top: 0px;
   z-index: 1;
   border: 0px solid rebeccapurple;
+  justify-content: flex-end;
 }
 /*//////////////////////////////////////DISEÑO///////////////////////////*/
 
@@ -32,7 +33,7 @@
 #logo {
   display: flex;
   background-image: url(/src\assets\Proyecto\Logo\logo2.png) !important ;
-  background: white;
+  background: rgba(255, 255, 255, 0.468) ;
   border-radius: 1rem;
   margin: 1rem;
   margin-right: 5rem;
@@ -67,7 +68,7 @@
 .home {
   display: flex;
   color: #1d1b31;
-  background: #1d1b31;
+  background: none !important;
   border-radius: 1rem;
   margin: 1rem;
   margin-right: 5rem;
@@ -83,7 +84,7 @@
 .icons2 {
   display: flex;
   width: 5rem;
-  height: 3rem;
+  height: 2.5rem !important;
   border: 0px solid yellow;
   background-image: url(/src\assets\Proyecto\iconos\17.png);
   background-size: contain;
@@ -124,7 +125,7 @@
   }
 
   .home {
-    background: none;
+display: none;
   }
 
   .restaurantes {
@@ -159,6 +160,121 @@
 
 @media (max-width: 790px), (max-height: 300px) {
   #titulo {
-    display: none;
+    /* display: none; */
+  }
+.home{
+opacity: 0;}
+#logo{
+  opacity: 0;
+}
+}
+
+
+@media (max-width: 1900px) {
+
+  #nav {
+    border: 0px solid rebeccapurple;
+    height: fit-content;
+  }
+  /*//////////////////////////////////////DISEÑO///////////////////////////*/
+  
+  #boton-buscar {
+    border: none;
+    background: none;
+    text-decoration: none;
+    border: 0px solid red;
+    
+  }
+  
+  #boton-buscar span {
+    font-size: 1rem;
+    color: #1d1b31;
+  }
+  
+  #boton-buscar:hover {
+    transform: scale(1.2);
+  }
+  
+  #logo {
+    display: flex;
+    background-image: url(/src\assets\Proyecto\Logo\logo2.png) !important ;
+    background: white;
+    border-radius: 1rem;
+    margin: 1rem;
+    margin-right: 5rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 3rem;
+    background-position: center;
+    width: 10%;
+    border: 0px solid red;
+  }
+  
+  #titulo {
+    color: black;
+    width: 100%;
+    height: auto;
+    border: 0px solid wheat;
+    font-family: tipo_letra3;
+    color: white ;
+    font-size: 2rem;
+    text-align: center;
+    align-self: center;
+  }
+  
+  .CapaTitulo {
+    color: #013440;
+    width: 60%;
+    height: max-content;
+    background: #659AA6;
+    margin: 1rem;
+    border-radius: 1rem;
+  }
+  .home {
+    display: flex;
+    color: #1d1b31;
+    background: #1d1b31;
+    border-radius: 1rem;
+    margin: 1rem;
+    margin-right: 5rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 3rem;
+    background-position: center;
+    width: 8%;
+    border: 0px solid red;
+    padding: 0.5rem;
+    justify-content: center;
+  }
+  .icons2 {
+    display: flex;
+    width: 5rem;
+    height: 2rem;
+    border: 0px solid yellow;
+    background-image: url(/src\assets\Proyecto\iconos\17.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  
+  .icons3{
+    display: flex;
+    width: 5rem;
+    height: 2rem;
+    border-radius: 1rem;
+    /* margin-top: 1rem; */
+    border: 0px solid yellow;
+    background-image: url(/src\assets\Proyecto\iconos\8.png);
+    /* background-color: white; */
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-left: 0rem;
+  }
+  
+  
+  #dos {
+    display: flex;
+    height: 5rem;
+    background: #93BBBF;
+    margin-top: 68vh;
   }
 }

@@ -7,6 +7,8 @@ import NavBar from "./components/Default/NavBar.vue";
 import NavBarPassword from "./components/Default/NavBarPassword.vue";
 // import Recorrido from "./components/Default/Recorrido.vue";
 import Prueba from "./components/Default/Prueba.vue";
+import InicioTest from "./components/Default/InicioTest.vue";
+import Test from "./components/Default/Test.vue";
 import Document from "./components/Default/Document.vue";
 import Pdf from "./components/Default/Pdf.vue";
 import layout from "./components/Default/layout.vue";
@@ -128,11 +130,7 @@ const routes = [
           // NavBar: NavBarUser,
         },
       },
-      {
-        path: "prueba",
-        component: Prueba,
-      },
-
+      
       {
         path: "Documentacion",
         components: {
@@ -140,12 +138,33 @@ const routes = [
         },
       },
 
-      {
-        path: "certificado",
-        component: Certificado,
-      },
     ],
   },
+  {
+    path: "/prueba",
+    name:"Prueba",
+    components: {
+      default:Prueba,
+    },
+
+    children:[
+      {
+        path:"test",
+        component:Test,
+      },
+      {
+        path:"comenzar",
+        component:InicioTest,
+      }
+    ]
+  },
+
+  {
+    path: "/certificado",
+    name:"certificado",
+    component: Certificado,
+  },
+
   /////////////ADMINISTRADOR//////////////
   {
     path: "/admin",
