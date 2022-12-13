@@ -22,7 +22,7 @@
       <div id="blog">
         <div class="pregunta">
           <h1>{{ cont }}- {{ q.question }}</h1>
-          <button id="generate">Generar</button>
+          <!-- <button id="generate">Generar</button> -->
         </div>
         <span
           class="text-black font-weight-light efecto e-izquierda d400 titulo2"
@@ -60,10 +60,10 @@
       </div>
       <!-- <button id="generate">Generar</button> -->
 
-      <ul class="pagination">
+      <!-- <ul class="pagination">
         <li class="page-item"><a class="page-link" @click="prev()">prev</a></li>
         <li class="page-item"><a class="page-link" @click="next()">Next</a></li>
-      </ul>
+      </ul> -->
     </div>
   </div>
 </template>
@@ -163,9 +163,10 @@ export default {
       } else if (this.acertadas < 3) {
         alert("PERDISTE INTENTA DE NUEVO" + this.acertadas);
         this.$router.push("/prueba/comenzar");
-      } else {
-        alert("SELECCIONA UNA RESPUESTA!");
-      }
+      } 
+      // else {
+      //   alert("SELECCIONA UNA RESPUESTA!");
+      // }
 
       function mostrar() {
         document.getElementById("resultado").style.display = "block";

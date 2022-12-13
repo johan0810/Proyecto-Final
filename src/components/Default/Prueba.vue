@@ -1,10 +1,14 @@
 <template>
   <div class="containere-body">
+   <router-link to="/user/inicio" class="salir">
+      </router-link>
     <router-view v-slot="{ Component }">
         <transition name="bonce-in">
           <component :is="Component" />
         </transition>
       </router-view>
+
+     
   </div>
 </template>
 
@@ -16,6 +20,22 @@
 .bounce-leave-active {
   animation: bounce-in 0.5s reverse;
 }
+
+.salir{
+  display: flex;
+  width: 3rem;
+  height: 3rem;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url(/src\assets\Proyecto\iconos\50.png);
+  border: 0px solid red;
+  margin: 1rem;
+}
+
+
+.salir:hover{
+  cursor: pointer;
+}
 @keyframes bounce-in {
   0% {
     transform: scale(0);
@@ -26,6 +46,7 @@
   100% {
     transform: scale(1);
   }
+
 
 
 }

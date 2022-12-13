@@ -10,7 +10,7 @@
       ></router-link>
     <div id="logo"></div>
     
-    <div class="CapaTitulo"><div id="titulo">Recorrido Virtual Sena</div></div>
+    <div class="CapaTitulo"><div id="titulo">ADMINISTRADOR</div></div>
     <div class="home">
       <router-link to="/" id="boton-buscar">
         <div class="icons2"></div>
@@ -23,5 +23,5 @@
 </template>
 
 <style scoped>
-@import url(/src\assets\Proyecto\Estilos\Admin\Navbar.css);
+@import url(/src\assets\Proyecto\Estilos\Admin\NavAdmin.css);
 </style>

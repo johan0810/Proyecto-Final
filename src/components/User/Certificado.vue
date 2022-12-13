@@ -1,5 +1,7 @@
 <template>
   <div class="container-body">
+   <router-link to="/user/inicio" class="salir">
+      </router-link>
     <div class="certificado">
       <div class="logo"></div>
       <div class="certificado-img"></div>
@@ -213,6 +215,25 @@ img {
   .imprimir {
     display: none !important;
   }
+  .salir{
+    display: none !important;
+  }
+}
+.salir{
+  display: flex;
+  position: absolute;
+  width: 3rem;
+  height: 3rem;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url(/src\assets\Proyecto\iconos\17.png);
+  border: 0px solid red;
+  margin: 1rem;
+}
+
+
+.salir:hover{
+  cursor: pointer;
 }
 </style>
 
