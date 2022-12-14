@@ -515,6 +515,7 @@ iframe {
 }
 
 @media (max-width: 1500px) {
+  
   .container-body {
     border: 0px solid rebeccapurple; 
     /* height: 30vh; */

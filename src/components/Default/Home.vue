@@ -1,7 +1,9 @@
 <template>
-
+ <router-link to="/user/inicio" class="salir">
+      </router-link>
   <div class="container-body">
-    <div class="titulo"><h1>RECORRIDO VIRTUAL SENA</h1></div>
+  
+    <div class="titulo"><h1>RECORRIDO VIRTUAL DEL SENA</h1></div>
     <div class="container-main">
       <!-- <img src="src\assets\Proyecto\Imagenes\IMG_20221112_104246_00_004.jpg"> -->
       <!-- <a-scene >
@@ -23,24 +25,28 @@
     </div>
 
     <div class="container-footer">
-    
       <div class="opciones">
-        <div class="card">
-          <div class="content" id="card1">
-            <router-link class="link" to="/logc in">
-              <!-- <div>Login</div> -->
-            </router-link>
-          </div>
-        </div>
-        <div class="card">
-          <div class="content" id="card2">
-            <router-link class="link" to="/Default/Recorrido">
-              <!-- <div>HACER RECORRIDO</div> -->
-            </router-link>
-          </div>
-        </div>
+        <router-link to="/login" class="card">
+          <router-link class="link" to="/login">
+            <div>INICIAR SESIÓN</div>
+          </router-link>
+          <div class="content" id="card1"></div>
+        </router-link>
+        <router-link to="/Recorrido" class="card">
+          <router-link class="link" to="/Recorrido">
+            <div>HACER RECORRIDO</div>
+          </router-link>
+          <div class="content" id="card2"></div>
+        </router-link>
       </div>
+      <div class="redes">
+      <a class="red red3" target="_blank" href="http://www.senasofiaplus.edu.co/"></a>
+        <a class="red red2" target="_blank" href="https://www.facebook.com/SENA/"></a>
+        <a class="red red1" target="_blank" href="https://www.facebook.com/SENA/"></a>
+      
     </div>
+    </div>
+    
   </div>
 
   <!-- <router-view></router-view> -->
@@ -56,15 +62,71 @@
   
 } */
 
+
+.salir{
+  display: flex;
+  width: 3rem;
+  height: 3rem;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url(/src\assets\Proyecto\iconos\45.png);
+  border: 0px solid red;
+  margin: 1rem;
+}
+
+
+.salir:hover{
+  cursor: pointer;
+}
+.redes {
+  display: flex;
+  position: absolute;
+  bottom: 0%;
+  right: 0%;
+  flex-flow: row;
+  border: 0px solid red;
+  width: 15rem;
+  height: 3rem;
+  margin-left: 0rem;
+}
+.red1 {
+  width: 5rem;
+  height: 3rem;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url(/src\assets\Proyecto\iconos\red1.png);
+}
+.red2 {
+  width: 5rem;
+  height: 3rem;
+   background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url(/src\assets\Proyecto\iconos\red2.png);
+}
+.red3 {
+  width: 20rem;
+  height: 7rem;
+   background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url(/src\assets\Proyecto\iconos\red3.png);
+}
+.red{
+  margin: .5rem;
+  }
+
+  .red:hover{
+    transform: scale(1.2);
+  }
+
 .container-body {
   display: flex;
   flex-flow: column;
   justify-content: center;
   flex-wrap: wrap;
   scroll-behavior: smooth;
-  border: 10px solid rebeccapurple;
-    width: 100%;
-   height: 100vh;
+  border: 00px solid rebeccapurple;
+  width: 100%;
+  height: 100vh;
   /* border: 10px solid black; */
 }
 
@@ -85,10 +147,11 @@
 .container-footer {
   display: flex;
   flex-flow: row;
-  border: px solid blue;
+  border: 0px solid blue;
   min-height: 50%;
   min-width: 100%;
   justify-items: center;
+  background-color: #ECF0F1;
 }
 
 #imglogo {
@@ -136,8 +199,10 @@
   flex-flow: column;
   width: 35%;
   height: 100%;
-  border: 2px solid rgb(73, 70, 70);
-  /* background-image: url(../Imagenes/img_Publicidad/anuncio3.jpg)  ; */
+  border: 2px solid white;
+  text-align: center;
+
+  justify-content: center;
   background-size: contain;
   /* box-shadow: 3px 5px 5px black; */
   overflow: hidden;
@@ -145,18 +210,16 @@
 }
 
 .content {
-  /* display: flex; */
-  /* flex-flow: column; */
   /* border: 2px solid yellow; */
   background-size: cover;
   height: 100%;
   background-repeat: no-repeat;
   /* transition: 0.5s; */
+  filter: brightness(100%);
 }
 .content:hover {
   transform: scale(1.2);
-  filter: brightness(20%);
-
+  filter: brightness(49%);
   -webkit-transition: all 300ms ease-in;
   -moz-transition: all 300ms ease-in;
   -ms-transition: all 300ms ease-in;
@@ -164,66 +227,35 @@
   transition: all 300ms ease-in;
   /* transition: 0.5s; */
 }
-
-.card:hover {
-  background-color: rgba(0, 0, 0, 0.629) !important;
-  /* transform: scale(1,2); */
-
-  -webkit-transition: all 200ms ease-in;
-  -moz-transition: all 200ms ease-in;
-  -ms-transition: all 200ms ease-in;
-  -o-transition: all 200ms ease-in;
-  transition: all 200ms ease-in;
+.link:hover {
+  color: #025159;
+  background: white;
+  border-radius: 2rem;
+  padding: 0.5rem;
 }
 
 #card1 {
-  /* background-image: url(/src\assets\Proyecto\iconos\fondo.jpg); */
+  background-image: url(/src\assets\Proyecto\Imagenes\img6.png);
 }
 
 #card2 {
-  /* background-image: url(/src\assets\Proyecto\Imagenes\gif.gif); */
+  background-image: url(/src\assets\Proyecto\Imagenes\img5.png);
 }
-
-/* .content {
-  width: 100%;
-  height: 10%;
-  border-radius: 3rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background-size: contain;
-  scroll-behavior: smooth;
-
-  transition: 0.5s;
-  background-image: url(/src\assets\Proyecto\Imagenes\gif3.gif);
-} */
-
-/* video{
-
-  position: fixed;  
-  z-index: -1;
-  height: 45%;
-  min-width: 100%;
-  top: 50%;
-  left: 50%;
-
-  transform: translateX(-50%) translateY(-50%);
-} */
 
 .link {
   display: flex;
   border: 0px solid red;
   text-decoration: none;
-  color: rgb(33, 4, 176);
-  font-family: tipo_letra7;
-  font-size: 3rem;
+  color: white;
+  font-family: tipo_letra;
+  font-size: 2rem;
   text-align: center;
   justify-items: center;
   justify-content: center;
-  background-color: rgba(255, 255, 255, 0.732);
   scroll-behavior: smooth;
   position: absolute;
+  z-index: 1;
+  left: 10%;
 }
 
 /* .content h2, a{

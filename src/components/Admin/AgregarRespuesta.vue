@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-              <button type="button" class="btn btn-danger" id="botton"><h1>PRUEBA</h1></button>
+              <!-- <button type="button" class="btn btn-danger" id="botton"><h1>PRUEBA</h1></button> -->
 
     <!-- Modal -->
     <div

@@ -21,7 +21,7 @@
 
       <div id="blog">
         <div class="pregunta">
-          <h1>{{ cont }}- {{ q.question }}</h1>
+          <h1>{{ cont }}- ¿{{ q.question }}?</h1>
           <!-- <button id="generate">Generar</button> -->
         </div>
         <span
@@ -88,6 +88,8 @@ export default {
       edit_questions: {},
       copy_edit_questions: {},
       acertadas: 0,
+      perdidas: 0,
+
     };
   },
   //  correctas=[],
@@ -158,16 +160,21 @@ export default {
 
     verificate() {
       if (this.acertadas >= 8) {
-        alert("FELICIDADES PUEDE OBTENER TU CERTIFICADO  " + this.acertadas);
+        alert("FELICIDADES PUEDE OBTENER TU CERTIFICADO  "+ " ACERTASTE: "+ this.acertadas + "DE " +this.list_questions.length+" PREGUNTAS");
         this.$router.push("/certificado");
-      } else if (this.acertadas < 3) {
-        alert("PERDISTE INTENTA DE NUEVO" + this.acertadas);
+      } else if (this.acertadas<3 & this.acertadas==!0){
+      alert("PERDISTE EL TEST VUELVE A INTENTAR "+ " ACERTASTE: "+ this.acertadas + "DE " +this.list_questions.length+" PREGUNTAS");
+
         this.$router.push("/prueba/comenzar");
       } 
       // else {
       //   alert("SELECCIONA UNA RESPUESTA!");
       // }
 
+    if (this.acertadas==0 & this.perdidas==0) {
+      alert("¡SELECCIONA ALGUNA RESPUESTA!")
+      
+    }
       function mostrar() {
         document.getElementById("resultado").style.display = "block";
       }
@@ -187,11 +194,12 @@ export default {
         // )
       } else {
         // alert("Mucho Arley");
+        this.perdidas++
       }
 
-      if (this.acertadas == this.list_questions.length) {
-        alert("GANASTE");
-      }
+      // if (this.acertadas == this.list_questions.length) {
+      //   alert("GANASTE");
+      // }
     },
 
     async store() {

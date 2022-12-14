@@ -19,6 +19,22 @@
     line-height: 1.4;
     contain: content
 }
+.tex {
+    display: flex !important;
+    align-items: center;
+    justify-content: center !important;
+    position: absolute !important; 
+    color: black;
+    z-index: 1;
+    background-color: rgba(255, 255, 255, 0.315);
+    backdrop-filter: blur(3px);
+    width: 50%;
+    height: 10rem;
+    border-radius: 0.5rem;
+    font-family: tipo_letra2;
+    top: 20%;
+    border: 0px solid red;
+  }
 
 .pnlm-container * {
     box-sizing: content-box
@@ -288,7 +304,7 @@
 .pnlm-load-button {
     position: absolute;
     top: 50%;
-    left: 50%;
+    left: 60%;
     width: 300px;
     height: 100px;
     margin: -50px 0 0 -100px;
@@ -304,10 +320,11 @@
 }
 
 .pnlm-load-button:hover {
-    background-color: rgba(77, 236, 59, 0.819);
+    background-color:turquoise ;
     color: white;
     transform: scale(1.2);
     transition: ease-in;
+    color: blue;
     
 }
 

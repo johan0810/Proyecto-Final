@@ -34,6 +34,14 @@
         </router-link>
       </div>
     </div>
+
+     <div class="card">
+      <div class="content">
+        <router-link target="_blank" class="link" to="/user">
+          <div>INICIAR COMO USUARIO</div>
+        </router-link>
+      </div>
+    </div>
   </div>
 </template>
 <style scoped>

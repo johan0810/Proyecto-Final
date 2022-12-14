@@ -1,10 +1,45 @@
 <template>
-  <p>Name:{{ user.name }}</p>
-  <p>Email:{{ user.email }}</p>
-  <p>created_at: {{ user.created_at }}</p>
-  <button type="button" @click="logout()">Cerrar Sesion</button>
+ <div class="container-body" id="contain1">
+    <div class="container" id="contain2">
+      <nav id="nav2">
+        <div class="foto"></div>
+      </nav>
+      <div class="profile">
+        <p>{{ user.name }}</p>
+        <p>{{ user.email }}</p>
+      </div>
 
-  
+      <!-- <div class="pho">
+        <input type="file" id="new-client-input" @change="show_image" />
+        <img
+          @click="open_browser('new-client-input')"
+          :src="users.url"
+          class="div"
+        />
+
+        <span
+          v-if="!users.url && !loading"
+          class="material-symbols-outlined"
+          @click="open_browser('new-client-input')"
+        >
+          account_circle
+        </span>
+
+        <div
+          v-if="loading"
+          class="loading"
+          @click="open_browser('new-client-input')"
+        ></div>
+      </div> -->
+
+      <!-- <button type="button" class="btn btn-primary" @click="create">
+        Add Client
+      </button> -->
+    </div>
+    <div class="d">
+      <!-- <button class="btn btn-primary" type="button" @click="logout()">Cerrar Sesion</button> -->
+    </div>
+  </div>
 </template>
 
 <style scoped>

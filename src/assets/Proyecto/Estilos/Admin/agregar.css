@@ -2,11 +2,13 @@
   /*ESTRUCTURA/*/
   display: flex;
   flex-flow: column;
-  /* height: 150rem; */
+  /* height: 80vh; */
   /*ESTRUCTURA/*/
   border: 0px solid blue;
   flex-wrap: wrap;
   justify-content: center;
+  /* overflow: scroll; */
+  
 }
 .list {
   display: flex;
@@ -68,8 +70,8 @@ a {
 .main {
   display: flex;
   border: 0px solid red;
-
-  /* overflow: scroll; */
+height: 50vh;
+  overflow: scroll;
 }
 .titulo{
   font-family: tipo_letra3;
