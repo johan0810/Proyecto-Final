@@ -127,11 +127,11 @@ export default {
   mounted() {
     this.index();
     
-    var boton = document.getElementById('botton');
+    // var boton = document.getElementById('botton');
 
-    boton.addEventListener('click', function(){
-      alert('clik')
-    })
+    // boton.addEventListener('click', function(){
+    //   alert('clik')
+    // })
 
   },
 

@@ -26,17 +26,17 @@
           <div>AGREGAR PREGUNTAS</div>
         </router-link>
       </div>
-    </div>
+    </div> -->
 
-    <div class="card">
+    <!-- <div class="card">
       <div class="content">
         <router-link class="link" to="/admin/agregar_respuesta">
           <div>AGREGAR RESPUESTAS</div>
         </router-link>
       </div>
-    </div>
+    </div> -->
 
-     <div class="card">
+     <!-- <div class="card">
       <div class="content">
         <router-link target="_blank" class="link" to="/user">
           <div>INICIAR COMO USUARIO</div>

@@ -4,16 +4,23 @@
   flex-flow: column;
   /* height: 80vh; */
   /*ESTRUCTURA/*/
-  border: 0px solid blue;
+  /* border: 10px solid red; */
   flex-wrap: wrap;
   justify-content: center;
-  /* overflow: scroll; */
   
 }
 .list {
+  /* border: 3px solid blue; */
   display: flex;
   flex-wrap: wrap;
+  overflow: scroll;
+  overflow-x: hidden;
+  width: 90vw;
+  height: 87vh;
   justify-content: center;
+}
+::-webkit-scrollbar{
+  display: none;
 }
 th {
   margin: 3rem;

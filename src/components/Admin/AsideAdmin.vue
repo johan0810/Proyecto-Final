@@ -83,7 +83,7 @@
       </li>
     </ul>
     <div class="profile_content">
-      <div class="profile">
+      <div class="profile" @click="logout()">
         <!-- <div class="profile_details">
           <img src="imagenes/io.jpg" alt="" />
           <div class="name_job">
@@ -122,3 +122,73 @@ export default {
 };
 </script> -->
 
+<script>
+export default {
+  components: {},
+  data() {
+    return {
+      token: null,
+      user: {},
+    };
+  },
+
+  mounted() {
+    if (localStorage.token) {
+      this.token = localStorage.token;
+      this.user = JSON.parse(localStorage.user);
+
+      this.get_user();
+    } else {
+      this.$router.push({
+        name: "Login",
+        params: {
+          message: "No estas autotizado a entrar",
+        },
+      });
+    }
+  },
+
+  methods: {
+    async get_user() {
+      try {
+        console.log(this.token);
+
+        const rs = await this.axios.get("/api/user", {
+          headers: { Authorization: `Bearer ${this.token}` },
+        });
+        this.user = rs.data.user;
+      } catch (e) {
+        this.$router.push({
+          name: "Login",
+          params: {
+            message: "no estas autorizado",
+          },
+        });
+      }
+    },
+    async logout() {
+      try {
+        const rs = await this.axios.get("/api/logout", {
+          headers: { Authorization: `Bearer ${this.token}` },
+        });
+
+        localStorage.clear();
+
+        this.$router.push({
+          name: "Home",
+          params: {
+            message: rs.data.message,
+          },
+        });
+      } catch (e) {
+        this.$router.push({
+          name: "Login",
+          params: {
+            message: e.response.data.message,
+          },
+        });
+      }
+    },
+  },
+};
+</script>
