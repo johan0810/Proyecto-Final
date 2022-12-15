@@ -5,8 +5,16 @@
         <div class="foto"></div>
       </nav>
       <div class="profile">
+        Name:
         <p>{{ user.name }}</p>
+        E-mail:
         <p>{{ user.email }}</p>
+        Phone:
+        <p>{{ user.phone }}</p>
+        Tipo DNI:
+        <p>{{ user.type_dni }}</p>
+        N° DNI:
+        <p>{{ user.dni }}</p>
       </div>
 
       <!-- <div class="pho">

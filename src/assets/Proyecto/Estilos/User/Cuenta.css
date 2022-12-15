@@ -306,6 +306,7 @@ main {
   padding: 1rem;
 }
 .foto {
+  display: flex;
   width: 10rem;
   height: 10rem;
   border: 5px solid #1d1b31;
@@ -313,7 +314,18 @@ main {
   background-size: contain;
   background-repeat: no-repeat;
   border-radius: 2rem;
+
 }
+.foto input{
+  border: 2px solid darkblue;
+  border-radius: 1rem;
+  display: flex;
+  font-size: 12px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+}
+
 #contain1 {
   background: rgba(51, 184, 229, 0.55);
   min-height: 100vh;
@@ -334,6 +346,13 @@ main {
   font-family: tipo_letra;
   border: 0px solid red;
   margin: 4rem;
+}
+.pho{
+  position: absolute;
+  right: 5px;
+  border: 2px solid red;
+  justify-content: center;
+  justify-items: center;
 }
 
 #contai {

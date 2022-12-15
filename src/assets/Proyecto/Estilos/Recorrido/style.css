@@ -35,6 +35,16 @@ body {
 .tituloR {
   font-family: tipo_letra;
   color:black;
+  text-align: center;
+  border-radius: 50px;
+  border: 2px solid #D0D3D4;
+  background-color: #B3B6B7;
+  width: 40%;
+}
+.tituloR:hover{
+  cursor: pointer;
+  color: white;
+  background-color: #797D7F;
 }
 
 #panoramica {
@@ -286,8 +296,8 @@ body {
 }
 
 .flecha-l {
-  height: 2.5rem;
-  width: 2.5rem;
+  height: 2rem;
+  width: 2rem;
   background: url(/src\assets\Proyecto\iconos\37.png) center center;
   background-size: cover;
   cursor: pointer;
@@ -297,16 +307,13 @@ body {
   /* background-color: white; */
 }
 
-.flecha-l:hover .flecha-m {
+.flecha-l:hover {
   height: 2rem;
   width: 2rem;
-  background: url(/src\assets\Proyecto\iconos\37.png) center center;
-  background-size: cover;
   cursor: pointer;
-  /* border: 2px solid white; */
+  border: 2px solid #EBF5FB;
+  background-color: #C3FFFF;
   border-radius: 50%;
-  /* opacity: 0.5; */
-  /* background-color: white; */
 }
 
 .flecha-s {
@@ -315,14 +322,14 @@ body {
   background: url(/src\assets\Proyecto\iconos\37.png) center center;
   background-size: cover;
   cursor: pointer;
-  /* border: 2px solid white; */
   border-radius: 50%;
-  /* opacity: 0.5; */
-  /* background-color: white; */
 }
 .flecha-s:hover {
-  /* transform:rotate3d(900deg); */
-  border: 0px solid red;
+  border: 2px solid #EBF5FB;
+  background-color: #C3FFFF;
+  height: 1.4rem;
+  width: 1.4rem;
+
 }
 
 .flecha-xs {
@@ -331,31 +338,30 @@ body {
   background: url(/src\assets\Proyecto\iconos\37.png) center center;
   background-size: cover;
   cursor: pointer;
-  border: 1.5px solid white;
   border-radius: 50%;
-  /* opacity: 0.5; */
-  background-color: white;
+}
+.flecha-xs:hover {
+  opacity: 1;
+  border: 2px solid #EBF5FB;
+  background-color: #C3FFFF;
+  height: 1rem;
+  width: 1rem;
 }
 
-.flecha-xl:hover,
-.flecha-l:hover {
+.flecha-xl:hover {
   opacity: 1;
   /* background-color: orangered; */
   /* border: 3px solid orangered; */
 }
 
-.flecha-m:hover,
-.flecha-s:hover {
-  opacity: 1;
-  /* background-color: rgb(230, 87, 34);
-   border: 2px solid orangered; */
-}
+.flecha-m:hover{
+    opacity: 1;
+    border: 2px solid #EBF5FB;
+    background-color: #C3FFFF;
+    height: 1.3rem;
+    width: 1.3rem;
+  }
 
-.flecha-xs:hover {
-  opacity: 1;
-  /* background-color: orangered;
-   border: 1.5px solid orangered; */
-}
 
 div.letrero_personalizado span {
   visibility: hidden;

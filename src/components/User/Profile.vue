@@ -2,11 +2,28 @@
   <div class="container-body" id="contain1">
     <div class="container" id="contain2">
       <nav id="nav2">
-        <div class="foto"></div>
+
+        <div class="foto">
+          <input type="file" id="new-client-input" @change="show_image"/>
+          <!-- <img
+            @click="open_browser('new-client-input')"
+            :src="users.url"
+            class="div"
+          /> -->
+        </div>
+
       </nav>
       <div class="profile">
+        Name:
         <p>{{ user.name }}</p>
+        E-mail:
         <p>{{ user.email }}</p>
+        Phone:
+        <p>{{ user.phone }}</p>
+        Tipo DNI:
+        <p>{{ user.type_dni }}</p>
+        N° DNI:
+        <p>{{ user.dni }}</p>
       </div>
 
       <!-- <div class="pho">

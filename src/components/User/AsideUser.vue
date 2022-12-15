@@ -60,28 +60,14 @@
         </router-link>
         <span class="tooltip">Documentos</span>
       </li>
-      <!-- <li>
-            <a href="#">
-              <span class="material-symbols-outlined"> shopping_cart </span>
-              <span class="links_name">Order</span>
-            </a>
-            <span class="tooltip">Order</span>
-          </li> -->
-      <!-- <li>
-          <a href="#">
-            <span class="material-symbols-outlined"> favorite_border </span>
-            <span class="links_name">Saved</span>
-          </a>
-          <span class="tooltip">Saved</span>
-        </li> -->
       <li>
         <router-link class="link" to="/user/Setting/">
         <a href="#">
           <span class="material-symbols-outlined"> settings </span>
           <span class="links_name">Setting</span>
         </a>
-        <span class="tooltip">Setting</span>
         </router-link>
+        <span class="tooltip">Setting</span>
       </li>
     </ul>
     <div class="profile_content">

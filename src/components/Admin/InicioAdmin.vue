@@ -12,6 +12,7 @@
       <h2>{{ user.name }}</h2>
     </div>
   </div> -->
+
   <div class="seccion">
     <!-- <router-link class="link" to="/admin/agregar_pregunta">
       <div id="secciones">PREGUNTAS</div>
@@ -19,7 +20,7 @@
     <router-link class="link" to="/admin/agregar_respuesta">
       <div id="secciones">Respuestas</div></router-link
     >        -->
-    <div class="card">
+    <!-- <div class="card">
       <div class="content">
         <router-link class="link" to="/admin/agregar_pregunta">
           <div>AGREGAR PREGUNTAS</div>
@@ -39,6 +40,35 @@
       <div class="content">
         <router-link target="_blank" class="link" to="/user">
           <div>INICIAR COMO USUARIO</div>
+        </router-link>
+      </div>
+    </div> -->
+    <div class="carousel__container">
+      <div class="carousel__item">
+        <router-link class="link" to="/user">
+          <div
+            style="background-image: url(/src/assets/Proyecto/Imagenes/gif3.gif); 
+            background-repeat: no-repeat;background-size:contain;" class="carousel__image">          
+            INICIAR COMO USUARIO
+          </div>
+        </router-link>
+      </div>
+      <div class="carousel__item">
+        <router-link class="link" to="/admin/agregar_pregunta">
+          <div
+            style="background-image: url(/src/assets/Proyecto/Imagenes/gif3.gif); 
+            background-repeat: no-repeat;background-size:contain;" class="carousel__image">          
+            AGREGAR PREGUNTA
+          </div>
+        </router-link>
+      </div>
+      <div class="carousel__item">
+        <router-link class="link" to="/admin/agregar_respuesta">
+          <div
+            style="background-image: url(/src/assets/Proyecto/Imagenes/gif3.gif); 
+            background-repeat: no-repeat;background-size:contain;" class="carousel__image">          
+            AGREGAR RESPUESTAS
+          </div>
         </router-link>
       </div>
     </div>

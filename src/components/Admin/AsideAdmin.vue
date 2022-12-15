@@ -21,17 +21,17 @@
         <router-link class="link" to="/admin/inicio">
           <a href="#">
             <span class="material-symbols-outlined">Undo </span>
-            <span class="links_name">inicio</span>
+            <span class="links_name">Start</span>
           </a>
         </router-link>
 
-        <span class="tooltip">Dashboard</span>
+        <span class="tooltip">Inicio</span>
       </li>
       <li>
         <router-link class="link" to="/admin/profileadmin">
           <a href="#">
             <span class="material-symbols-outlined"> person </span>
-            <span class="links_name">Users</span>
+            <span class="links_name">Profile</span>
           </a>
         </router-link>
 
@@ -42,7 +42,7 @@
        <router-link class="link" to="/admin/Usuarios">
           <a href="#">
             <span class="material-symbols-outlined">chat </span>
-            <span class="links_name">Message</span>
+            <span class="links_name">Users</span>
           </a>  
         </router-link>
         <span class="tooltip">Usuarios</span>
@@ -78,19 +78,19 @@
           <span class="material-symbols-outlined"> settings </span>
           <span class="links_name">Setting</span>
         </a>
-        <span class="tooltip">Setting</span>
         </router-link>
+        <span class="tooltip">Configuración</span>
       </li>
     </ul>
     <div class="profile_content">
       <div class="profile">
-        <div class="profile_details">
+        <!-- <div class="profile_details">
           <img src="imagenes/io.jpg" alt="" />
           <div class="name_job">
             <div class="name">Arley Acosta</div>
             <div class="job">Creator</div>
           </div>
-        </div>
+        </div> -->
         <span class="material-symbols-outlined" id="log_out"> login </span>
       </div>
     </div>
