@@ -177,6 +177,7 @@ background-color: rgba(181, 200, 211, 0.603) !important;}
     bottom: 0;
     left: 0;
     width: 100%;
+    
 }
 .sidebar .profile_content .profile{
     position: relative;
@@ -184,6 +185,7 @@ background-color: rgba(181, 200, 211, 0.603) !important;}
     height: 60px;
     background: none;
     transition: all 0.4s ease;
+    
 }
 .sidebar.active .profile_content .profile{
     background: #1d1b31;

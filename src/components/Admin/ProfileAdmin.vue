@@ -44,9 +44,9 @@
         Add Client
       </button> -->
     </div>
-    <div class="d">
-      <!-- <button class="btn btn-primary" type="button" @click="logout()">Cerrar Sesion</button> -->
-    </div>
+    <!-- <div class="d">
+      <button class="btn btn-primary" type="button" @click="logout()">Cerrar Sesion</button>
+    </div> -->
   </div>
 </template>
 

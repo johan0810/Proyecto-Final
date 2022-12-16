@@ -20,7 +20,8 @@
           <th scope="col">#</th>
           <th scope="col">Nombre</th>
           <th scope="col">Email</th>
-          <th scope="col">DNI</th>
+          <th scope="col">TIPO DNI</th>
+          <th scope="col">N°  DNI</th>
           <th scope="col">PHONE</th>
         </tr>
       </thead>
@@ -35,6 +36,7 @@
           <th scope="row">{{ i + 1 }}</th>
           <td>{{ users.name }}</td>
           <td>{{ users.email }}</td>
+          <td>{{ users.type_dni }}</td>
           <td>{{ users.dni }}</td>
           <td>{{ users.phone }}</td>
           <td>

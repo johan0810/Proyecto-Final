@@ -83,7 +83,7 @@
       </li>
     </ul>
     <div class="profile_content">
-      <div class="profile" @click="logout()">
+      <div class="profile" @click="logout()" style="cursor: pointer">
         <!-- <div class="profile_details">
           <img src="imagenes/io.jpg" alt="" />
           <div class="name_job">
